@@ -1,0 +1,23 @@
+// @import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:300italic,700italic,400,300);
+
+@mixin typography($fontFamily,
+    $fontWeight,
+    $fontSize,
+    $lineHight,
+    $letterSpacing,
+    $color) {
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    line-height: $lineHight;
+    letter-spacing: $letterSpacing;
+
+    @if $color ==null {
+        color: #000000;
+    }
+
+    @else {
+        color: $color;
+    }
+}

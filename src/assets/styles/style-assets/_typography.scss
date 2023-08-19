@@ -1,0 +1,70 @@
+// Kindly press Ctrl+A and then press Ctrl+/ to use the code
+
+// here the typography is defined
+
+@import "../mixins/typegraphyMixin";
+
+.C61 {
+    @include typography(Cabin, 600, 61px, 73px, null, null); //60 70
+}
+
+.C49 {
+    @include typography(Cabin, 600, 49px, 59px, null, null); //70px
+}
+
+.C39 {
+    @include typography(Cabin, 700, 39px, 47px, null, null);
+}
+
+.C31 {
+    @include typography(Cabin, 700, 31px, 37px, null, null);
+}
+
+.M31 {
+    @include typography(Merriweather, 400, 31px, 37.2px, null, null);
+}
+
+.M25 {
+    @include typography(Merriweather, 400, 25px, 30px, null, null);
+}
+
+.M20 {
+    @include typography(Merriweather, 400, 20px, 24px, null, null);
+}
+
+.M16 {
+    @include typography(Merriweather, 400, 16px, 19px, null, null);
+}
+
+.M13 {
+    @include typography(Merriweather, 400, 13px, 16px, null, null);
+}
+
+.M10 {
+    @include typography(Merriweather, 400, 10px, 12px, null, null);
+}
+
+@media (max-width: 767px) {
+    .C61 {
+        @include typography(Cabin, 600, 40px, 73px, null, null); //60 70
+    }
+
+
+}
+
+
+// @mixin typography($fontFamily, $fontSize, $fontWeight, $letterSpacing, $lineHight, $color)
+
+// .pointer {
+//   &:hover {
+//     cursor: pointer;
+//   }
+// }
+
+// // .primary-text {
+// //   color: $primaryColor;
+// // }
+
+// .white-text {
+//   color: $whiteColor;
+// }
