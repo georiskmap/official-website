@@ -33,3 +33,7 @@ npm run build
 ```sh
 npm run lint
 ```
+
+
+## FIGMA FILE
+[Link](https://www.figma.com/file/wBkMk3Klb4kGJpgnHgpVZg/GRMI?type=design&node-id=1-5)
