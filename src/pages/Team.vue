@@ -133,7 +133,7 @@ import "../assets/styles/App.scss"
             </div>
         </div>
     </div>
-    <Footer />
+    <Footer > </Footer>
 </template>
 
 
