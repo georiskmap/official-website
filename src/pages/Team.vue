@@ -13,7 +13,7 @@ import "../assets/styles/App.scss"
             <div class="container">
                 <div class="row text-center">
                     <div class="C49 text-center">
-                        TEAMS
+                        Our Team
                     </div>
                     <!-- <h1 class="heading-title"> Our Team Style </h1> -->
                 </div>
@@ -22,7 +22,7 @@ import "../assets/styles/App.scss"
                     <div class="col-md-3 col-sm-6">
                         <div class="our-team">
                             <div class="pic">
-                                <img src='../assets/icons/teams 1.png' alt="">
+                                <img src='../assets/icons/teams1.png' alt="">
                             </div>
                             <div class="C31 mt-3">
                                 Taiwo Ogunwumi
@@ -36,96 +36,13 @@ import "../assets/styles/App.scss"
                     <div class="col-md-3 col-sm-6">
                         <div class="our-team">
                             <div class="pic">
-                                <img src='../assets/icons/teams 2.png' alt="">
+                                <img src='../assets/icons/teams2.png' alt="">
                             </div>
                             <div class="C31 mt-3">
                                 Opeyemi Olatunde
                             </div>
                             <div class="M16 mt-2">
                                 CHIEF OPERATING OFFICER
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-6">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src='../assets/icons/teams 3.png' alt="">
-                            </div>
-                            <div class="C31 mt-3">
-                                Wade Warren
-                            </div>
-                            <div class="M16 mt-2">
-                                VOLUNTEER
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-6">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src='../assets/icons/teams 4.png' alt="">
-                            </div>
-                            <div class="C31 mt-3">
-                                Jenny Wilson
-                            </div>
-                            <div class="M16 mt-2">
-                                VOLUNTEER
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src='../assets/icons/teams 5.png' alt="">
-                            </div>
-                            <div class="C31 mt-3">
-                                Robert Fox
-                            </div>
-                            <div class="M16 mt-2">
-                                VOLUNTEER
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-6">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src='../assets/icons/teams 6.png' alt="">
-                            </div>
-                            <div class="C31 mt-3">
-                                Jerome Bell
-                            </div>
-                            <div class="M16 mt-2">
-                                VOLUNTEER
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-6">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src='../assets/icons/teams 7.png' alt="">
-                            </div>
-                            <div class="C31 mt-3">
-                                Devon Lane
-                            </div>
-                            <div class="M16 mt-2">
-                                VOLUNTEER
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-6">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src='../assets/icons/teams 8.png' alt="">
-                            </div>
-                            <div class="C31 mt-3">
-                                Guy Hawkins
-                            </div>
-                            <div class="M16 mt-2">
-                                VOLUNTEER
                             </div>
                         </div>
                     </div>

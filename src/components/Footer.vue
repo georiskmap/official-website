@@ -24,10 +24,14 @@ export default {
                     </div>
                     <div style="margin-top: 16px;display: inline-flex;">
                         <div style="margin-right: 16px;">
-                            <img src='../assets/icons/Linkedin.png' alt="Responsive image">
+                            <a href="https://www.linkedin.com/company/geohazards-risk-mapping-initiative/">
+                                <img src='../assets/icons/Linkedin.png' alt="GRMI LINKEDIN">
+                            </a>
                         </div>
                         <div>
-                            <img src='../assets/icons/Twitter.png' alt="Responsive image">
+                            <a href=https://twitter.com/GeohazardMaps>
+                                <img src='../assets/icons/Twitter.png' alt="GRMI TWITTER">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -76,7 +80,7 @@ export default {
                 <div class="col-lg-2 col-md-3 mb-4 mb-md-0">
                     <div class="d-flex flex-column" style="margin-right: 12px;">
                         <div class="M20 white" style="font-weight: 700;margin-bottom: 24px">CONTACT</div>
-                        <span class="M16 white">hey@georiskmap.org</span>
+                        <span class="M16 white">mails@georiskmap.org</span>
                     </div>
                 </div>
                 <!--Grid column-->
@@ -110,11 +114,11 @@ export default {
             <!--Grid row-->
             <div style="margin-top: 114px;">
                 <div class="M13 white d-flex justify-content-center mb-3">
-                    2023 georiskmap.org© ALL RIGHTS RESERVED
+                    2020 - 2023 georiskmap.org © ALL RIGHTS RESERVED
                     <!-- <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
                 </div>
                 <div class="M10 white d-flex justify-content-center">
-                    Website designed by Timi Salaam
+                    Website designed by GRMI Technologies
                 </div>
             </div>
         </div>

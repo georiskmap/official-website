@@ -15,7 +15,7 @@ export default {
       <div class="row">
         <div class="hero-container w-100">
           <div class="hero-text w-100">
-            <div class="C61 white" style="margin-bottom: 16px;">GeoHazards; Predict,Prepare, Protect.</div>
+            <div class="C61 white" style="margin-bottom: 16px;">GeoHazards; Predict, Prepare, and Protect.</div>
 
             <p class="M20 white" style="margin-bottom: 16px;">Promoting a sustainable environment
               through

@@ -21,13 +21,13 @@
                 </div>
                 <div class="d-flex flex-row">
                     <div>
-                        <img src="../assets/icons/who_are_we 1.png" class="img-fluid" alt="Responsive image">
+                        <img src="../assets/icons/who_are_we1.png" class="img-fluid" alt="Responsive image">
                     </div>
                     <div style="margin: 0 34px 0 34px;">
-                        <img src="../assets/icons/who_are_we 2.png" class="img-fluid" alt="Responsive image">
+                        <img src="../assets/icons/who_are_we2.png" class="img-fluid" alt="Responsive image">
                     </div>
                     <div>
-                        <img src="../assets/icons/who_are_we 3.png" class="img-fluid" alt="Responsive image">
+                        <img src="../assets/icons/who_are_we3.png" class="img-fluid" alt="Responsive image">
                     </div>
                 </div>
             </div>

@@ -12,7 +12,7 @@ import "../../assets/styles/App.scss"
         <div>
             <div class="row text-center mb-5">
                 <div class="C49 text-center">
-                    COMPLETED
+                    COMPLETED PROJECTS
                 </div>
             </div>
 

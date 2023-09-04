@@ -13,7 +13,7 @@
                 <div class="w-100 images-container">
                     <div class="col-lg-6 col-md-6 mb-4 mb-md-0" style="display: flex; flex-direction: row;">
                         <div class="text-center">
-                            <img src='../assets/icons/our_mission 1.png' class="img-fluid" alt="Responsive image">
+                            <img src='../assets/icons/our_mission1.png' class="img-fluid" alt="Responsive image">
                             <div class="M20 primary-900" style="max-width: 354px; margin-top: 34px;">
                                 Identify
                                 locations
@@ -25,7 +25,7 @@
                         </div>
 
                         <div class="text-center">
-                            <img src='../assets/icons/our_mission 2.png' class="img-fluid" alt="Responsive image">
+                            <img src='../assets/icons/our_mission2.png' class="img-fluid" alt="Responsive image">
                             <div class="M20 primary-900" style="max-width: 354px; margin-top: 34px;">
                                 Produce Hazard
                                 susceptibility
@@ -38,7 +38,7 @@
                         <!-- <div class="d-flex w-100 justify-content-between"> -->
 
                         <div class="text-center">
-                            <img src='../assets/icons/our_mission 3.png' class="img-fluid" alt="Responsive image">
+                            <img src='../assets/icons/our_mission3.png' class="img-fluid" alt="Responsive image">
                             <div class="M20 primary-900" style="max-width: 354px; margin-top: 34px;">
                                 Share with
                                 Disaster
@@ -50,7 +50,7 @@
                         </div>
 
                         <div class="text-center">
-                            <img src='../assets/icons/our_mission 4.png' class="img-fluid" alt="Responsive image">
+                            <img src='../assets/icons/our_mission4.png' class="img-fluid" alt="Responsive image">
                             <div class="M20 primary-900" style="max-width: 354px; margin-top: 34px;">
                                 Use of maps for
                                 efficient

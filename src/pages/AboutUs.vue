@@ -41,88 +41,38 @@ import "../assets/styles/App.scss"
                 <div class="row">
                   <div class="col-12 col-md-6 text-container">
                     <p>
-                      <span>
-                        Lorem ipsum dolor sit amet consectetur. Elementum tortor pellentesque mollis urna bibendum
-                        volutpat.
-                        Pretium
-                        suspendisse ipsum pellentesque ultrices quam. Nec adipiscing tincidunt mus imperdiet orci interdum
-                        suspendisse
-                        enim. Laoreet tristique nunc tortor congue scelerisque. In ipsum turpis tempus sed aliquam
-                        pellentesque.
-                        Mattis
-                        vivamus pulvinar sollicitudin tincidunt blandit.
-                      </span>
+                      In harmonious progression with the principles of Sustainable Development Goals 11 (Sustainable Cities and Communities) and 13 (Climate Action), we are embarking on a pioneering endeavor that aligns with the core objectives of the Sendai Framework for Disaster Risk Reduction. Our goal is to amplify the availability and accessibility of multi-hazard early warning systems, alongside comprehensive disaster risk information and assessments by the year 2030.
+                      </p>
 
-                      Sed ornare sit suspendisse elit id vitae. In egestas viverra sem quam risus eu. Non consequat porta
-                      libero
-                      porta
-                      ac scelerisque elementum. Aliquam dictum faucibus varius aliquam iaculis egestas interdum commodo.
-                      Sed
-                      est
-                      metus
-                      est at ut. Sagittis vehicula tempus cursus velit vitae.
+                      <p>
+                      Powered by a profound commitment to these global aspirations, we have inaugurated the "Geohazards Risk Mapping Initiative." This initiative stands as a beacon of innovation and community mobilization, marshaling the talents of volunteer youth proficient in Geographic Information Systems and satellite imagery analysis. Through their expertise, we are crafting precise flood susceptibility and post-disaster maps, not just in Nigeria, but extending our efforts across various African nations. 
+                      </p>
 
-                      <span>
-                        Diam consectetur adipiscing turpis amet facilisi posuere integer cursus ac. Amet laoreet tempor
-                        pulvinar
-                        cras
-                        nam. Amet neque vitae vitae integer viverra. In vulputate a nunc lacus. Proin nibh gravida eu
-                        facilisis
-                        purus
-                        risus eu. Sed quis quisque ut libero tristique non. Augue aenean magna libero nisi venenatis donec
-                        nisi.
-                        Nibh
-                        pharetra eget id nunc massa metus tincidunt tellus eget. Vivamus fermentum tellus sagittis ipsum
-                        et
-                        natoque
-                        mi.
-                        Faucibus risus id orci arcu. Facilisis sed ligula lorem non lobortis dictum nisl. Non eget viverra
-                        montes
-                        donec.
-                        Odio etiam tincidunt maecenas quam nunc a morbi sapien justo. Vel magna tincidunt enim tristique
-                        egestas
-                        pellentesque.
-                      </span>
+                      <p>
+                      We are steadily carving a pathway of progressive impact, fostering local solutions embedded with globally validated insights through the development of flood risk geospatial solutions. Our mission transcends mere documentation; it is about weaving a tapestry of safety, awareness, and proactive engagement within communities vulnerable to the vagaries of climate change.
+                      </p>
 
-                      Vitae vestibulum sit proin sagittis cursus mauris nulla nibh urna. Molestie tortor quis purus purus
-                      consequat
-                      urna elit porttitor fringilla. Dolor mi sapien ultrices nunc etiam est lobortis. Ut felis morbi
-                      adipiscing
-                      volutpat commodo fames facilisis odio dictumst. Consequat faucibus a at ridiculus sodales
-                      adipiscing.
-                      Nec
-                      arcu
-                      nunc pellentesque nulla vel. Aliquet lobortis eget tincidunt elit consectetur nulla tempus ac.
-                      Eleifend ante
-                      ligula dignissim duis. Diam nulla a non non urna ac.
-                      <span>
-
-                        In ut at nisl bibendum non in sed nibh. Laoreet a orci sed mus et nec tincidunt. Sodales
-                        adipiscing
-                        aenean
-                        imperdiet justo quis congue neque. Rhoncus magna netus nulla porttitor accumsan porttitor.
-                        Pellentesque
-                        dolor
-                        congue ultrices facilisi eu tempus tincidunt laoreet at. Enim urna maecenas faucibus in justo
-                        suscipit
-                        pellentesque. Urna sapien elit nulla viverra elit. Metus semper a diam viverra ullamcorper eu.
-                        Penatibus
-                        lectus
-                        suspendisse elementum augue dui sapien consectetur.
-                      </span>
+                      <p>
+                      As we embark on this momentous journey, we are operationalizing our objectives through the following strategic actions: <br>
+                      ● Unveiling mobile applications that foster community engagement, chiefly to facilitate the timely reporting of flood events and foster a spirit of vigilance and collaboration. <br>
+                      ● Orchestrating mapathons as a participatory community methodology, thereby refining flood prediction analyses and encouraging local involvement in safety measures. <br>
+                      ● Crafting high-caliber static and web maps that serve as robust tools for both planning and response, facilitating informed decision-making in critical times. <br>
+                      ● Ensuring these early warning signal maps are accessible to the broader public, forming a nexus of information that benefits emergency institutions and stakeholders alike, fostering a community united in resilience and preparedness.
                     </p>
                   </div>
                   <div class="col-12 col-md-6 text-center" style="margin-top: 37px;">
-                    <img src='../assets/icons/about_us_president.png' class="img-fluid" alt="Responsive image">
-                    <div class="C31" style="padding-top: 6px;">
-                      Taiwo Ogunwumi
-                    </div>
+                    <iframe width="560" height="315" 
+                      src="https://www.youtube.com/embed/sAx462Sc004?si=uClXD1ueAA_bv1tz&amp;start=1" 
+                      title="YouTube video player" frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      allowfullscreen>
+                    </iframe>
                   </div>
                   <div class="images-container">
-                    <img class="item" src='../assets/icons/about_us 1.png'>
-                    <img class="item" src='../assets/icons/about_us 2.png'>
-                    <img class="item" src='../assets/icons/about_us 3.png'>
-                    <img class="item" src='../assets/icons/about_us 4.png'>
+                    <img class="item" src='../assets/icons/about_us1.png'>
+                    <img class="item" src='../assets/icons/about_us2.png'>
+                    <img class="item" src='../assets/icons/about_us3.png'>
+                    <img class="item" src='../assets/icons/about_us4.png'>
                   </div>
                 </div>
               </div>

@@ -14,13 +14,13 @@ import CustomButton from './Buttons/Button.vue'
                     </div>
 
                     <p class="M20 white" style="max-width: 1166px; margin-bottom: 32px;">
-                        Promoting a sustainable environment through GEO Hazard Mapping Initiative is focused on deploying
-                        volunteer
-                        youths who are skilled at using Geographic Information Systems and satellite imagery analysis to
-                        create
-                        susceptibility and emergency mapping of actual or expected natural, biological, and technological
-                        hazards
-                        being experienced in Nigeria and other African countries as a result of Climate change.
+                        Join us in this vital endeavor as we work together to promote a sustainable environment, 
+                        
+                        safeguarding present and future generations from the adverse effects of climate change. 
+                        
+                        Your skills and knowledge could be the linchpin in shaping a resilient Africa, fortified 
+                        
+                        against the trials of geohazards.
                     </p>
                 </div>
                 <CustomButton class="M16 btn-success" btn-text="Get Involved" type="success" size="lg" />
