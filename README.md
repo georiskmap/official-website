@@ -34,6 +34,13 @@ npm run build
 npm run lint
 ```
 
+### Note:
+
+```sh
+Main branch deploys to live website
+Dev branch deploys to test website
+```
+
 
 ## FIGMA FILE
 [Link](https://www.figma.com/file/wBkMk3Klb4kGJpgnHgpVZg/GRMI?type=design&node-id=1-5)
