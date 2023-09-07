@@ -61,7 +61,7 @@ import "../assets/styles/App.scss"
                     </p>
                   </div>
                   <div class="col-12 col-md-6 text-center" style="margin-top: 37px;">
-                    <iframe width="560" height="315" 
+                    <iframe width="460" height="315" 
                       src="https://www.youtube.com/embed/sAx462Sc004?si=uClXD1ueAA_bv1tz&amp;start=1" 
                       title="YouTube video player" frameborder="0" 
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
