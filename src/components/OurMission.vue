@@ -3,18 +3,15 @@
 
 <template>
     <div class="container-section">
-        <div class="container" style="padding:78px 0;">
-            <div class="row mt-4">
-
-                <div class="hero-text w-100">
-                    <div class="C49 tertiary-900 mb-4">OUR MISSION</div>
+        <div class="" style="padding:78px 0;">
+            <div class="hero-text w-full">
+                    <div class="text-tertiary font-semibold text-[1.5rem] md:text-[2.4rem] text-center mb-8">OUR MISSION</div>
                 </div>
                 
-                <div class="w-100 images-container">
-                    <div class="col-lg-6 col-md-6 mb-4 mb-md-0" style="display: flex; flex-direction: row;">
-                        <div class="text-center">
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+                    <div  class="text-center flex justify-center items-center flex-col">
                             <img src='../assets/icons/our_mission1.png' class="img-fluid" alt="Responsive image">
-                            <div class="M20 primary-900" style="max-width: 354px; margin-top: 34px;">
+                            <div class="text-textgreen text-[1.2rem]" style="max-width: 354px; margin-top: 34px;">
                                 Identify
                                 locations
                                 in
@@ -24,22 +21,18 @@
                                 various geohazards.</div>
                         </div>
 
-                        <div class="text-center">
+                        <div class="text-center flex justify-center items-center flex-col">
                             <img src='../assets/icons/our_mission2.png' class="img-fluid" alt="Responsive image">
-                            <div class="M20 primary-900" style="max-width: 354px; margin-top: 34px;">
+                            <div class="M20 text-textgreen text-[1.2rem]" style="max-width: 354px; margin-top: 34px;">
                                 Produce Hazard
                                 susceptibility
                                 and prediction maps
                                 at a local scale.</div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-6 col-md-6 mb-4 mb-md-0" style="display: flex; flex-direction: row;">
-                        <!-- <div class="d-flex w-100 justify-content-between"> -->
-
-                        <div class="text-center">
+                    <div  class="text-center flex justify-center items-center flex-col">
                             <img src='../assets/icons/our_mission3.png' class="img-fluid" alt="Responsive image">
-                            <div class="M20 primary-900" style="max-width: 354px; margin-top: 34px;">
+                            <div class="M20 text-textgreen text-[1.2rem]" style="max-width: 354px; margin-top: 34px;">
                                 Share with
                                 Disaster
                                 and
@@ -49,9 +42,9 @@
                                 Environmental response stakeholders</div>
                         </div>
 
-                        <div class="text-center">
+                        <div  class="text-center flex justify-center items-center flex-col">
                             <img src='../assets/icons/our_mission4.png' class="img-fluid" alt="Responsive image">
-                            <div class="M20 primary-900" style="max-width: 354px; margin-top: 34px;">
+                            <div class="M20 text-textgreen text-[1.2rem]" style="max-width: 354px; margin-top: 34px;">
                                 Use of maps for
                                 efficient
                                 disaster preparedness,
@@ -59,11 +52,7 @@
                                 warning planning.</div>
                         </div>
                     </div>
-                </div>
-                <!-- </div> -->
-                <!-- </div> -->
-                <!-- </div> -->
-            </div>
+              
         </div>
     </div>
 </template>
@@ -73,20 +62,14 @@
     padding: 0 120px 0 120px;
 }
 
-.images-container {
-    display: flex;
-    flex-direction: row;
-}
+
 
 @media (max-width: 767px) {
     .container-section {
-        padding: 0 60px 0 60px;
+        padding: 0 20px 0 20px;
     }
 
-    .images-container {
-        display: flex;
-        flex-direction: column;
-    }
+   
 
 }
 

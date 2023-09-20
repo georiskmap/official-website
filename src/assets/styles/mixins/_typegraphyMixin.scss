@@ -1,23 +1,25 @@
-// @import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:300italic,700italic,400,300);
+// /* The code you provided is written in SCSS (Sassy CSS) syntax. */
+// /* The code you provided is written in SCSS (Sassy CSS) syntax. */
+// // @import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:300italic,700italic,400,300);
 
-@mixin typography($fontFamily,
-    $fontWeight,
-    $fontSize,
-    $lineHight,
-    $letterSpacing,
-    $color) {
-    font-family: $fontFamily;
-    font-style: normal;
-    font-weight: $fontWeight;
-    font-size: $fontSize;
-    line-height: $lineHight;
-    letter-spacing: $letterSpacing;
+// @mixin typography($fontFamily,
+//     $fontWeight,
+//     $fontSize,
+//     $lineHight,
+//     $letterSpacing,
+//     $color) {
+//     font-family: $fontFamily;
+//     font-style: normal;
+//     font-weight: $fontWeight;
+//     font-size: $fontSize;
+//     line-height: $lineHight;
+//     letter-spacing: $letterSpacing;
 
-    @if $color ==null {
-        color: #000000;
-    }
+//     @if $color ==null {
+//         color: #000000;
+//     }
 
-    @else {
-        color: $color;
-    }
-}
+//     @else {
+//         color: $color;
+//     }
+// }

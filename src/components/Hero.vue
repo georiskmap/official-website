@@ -10,32 +10,25 @@ export default {
 
 <template>
   <div class="hero-image">
-    <div class="container">
+    <div class="hero-text h-full flex flex-col w-full justify-center items-center ">
+            <h1 class="text-[2.2rem] md:text-[2.45rem] text-center   lg:text-[3.831rem]  font-semibold">GeoHazards; Predict, Prepare, and Protect.</h1>
 
-      <div class="row">
-        <div class="hero-container w-100">
-          <div class="hero-text w-100">
-            <div class="C61 white" style="margin-bottom: 16px;">GeoHazards; Predict, Prepare, and Protect.</div>
-
-            <p class="M20 white" style="margin-bottom: 16px;">Promoting a sustainable environment
+            <p class="M20 white text-[0.8rem] md:text-[1.4rem] leading-[2rem] text-center" style="margin-bottom: 16px;">Promoting a sustainable environment
               through
               the
               development,
               generating applications, and <br />
               dissemination of Geohazard maps using advanced Geospatial Technology</p>
-            <div>
+            <div class="flex gap-4 flex-col md:flex-row">
+            <button class="px-10 py-4 text-lg bg-brandgreen">View Water Level</button>
+            <button class="px-10 py-4 text-lg border-[#EAF7F3] border bg-none">View Dashboard</button>
+
+      
             </div>
           </div>
-          <div>
-            <CustomButton class="M16 white btn-success" btn-text="View Water Level" type="success" size="lg" />
-
-            <CustomButton class="M16 btn-outline" btn-text="View Dashboard" type="outline-secondary" size="lg"
-              style="border-radius: 0;background-color: transparent;width: 216px;height: 67px;color: #EAF7F3;" />
-          </div>
+         
         </div>
-      </div>
-    </div>
-  </div>
+    
 </template>
 
 <style scoped>
@@ -70,7 +63,7 @@ export default {
   color: white;
 }
 
-.hero-text button {
+/* .hero-text button {
   border: none;
   outline: 0;
   display: inline-block;
@@ -79,7 +72,7 @@ export default {
   background-color: #ddd;
   text-align: center;
   cursor: pointer;
-}
+} */
 
 .hero-text button:hover {
   background-color: #555;

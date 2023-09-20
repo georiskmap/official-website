@@ -1,38 +1,23 @@
 <script setup>
 import Card from './Cards/Card.vue'
+import Carousel from './carousel/Carousel.vue';
 </script>
 
 <template>
     <div class="container-section">
-        <div class="container" style="padding:78px 0;">
-            <div class="row">
-                <div class="hero-text w-100">
-                    <div class="C49 tertiary-900 mb-4">
+        <div class="" style="padding:78px 0;">
+            <div class="hero-text flex justify-center items-center w-full ">
+                    <div class="uppercase font-semibold  text-center text-[1.5rem] md:text-[3rem] text-tertiary mb-4">
                         APPS AND DATA
                     </div>
                 </div>
 
                 <div class="w-100 images-container">
-                    <div class="col-12">
+                    <Carousel />
+                    
+                    
                         <div id="carouselExampleControls" class="carousel slide" data-bs-interval="false">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <!-- MAKE THIS DIV FLEX IN DESKTOP AND BLOCK IN MOBILE -->
-                                    <div class="card-container">
-                                        <Card />
-                                        <Card />
-                                        <Card />
-                                        <Card />
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="card-container">
-                                        <Card />
-                                        <Card />
-                                        <Card />
-                                        <Card />
-                                    </div>
-                                </div>
+                        
                             </div>
                             <a class="carousel-control carousel-control-prev" data-bs-target="#carouselExampleControls"
                                 href="#slideCarousel" data-bs-slide="prev">
@@ -45,10 +30,11 @@ import Card from './Cards/Card.vue'
                                 <img src='../assets/icons/arrow-right.png' class="img-fluid" alt="Responsive image">
                             </a>
                         </div>
-                    </div>
-                    <!-- </div> -->
-                </div>
-            </div>
+                    
+                   
+
+
+                 
         </div>
     </div>
 </template>
@@ -60,9 +46,7 @@ import Card from './Cards/Card.vue'
 
 
 @media (max-width: 767px) {
-    .images-container {
-        padding: 0;
-    }
+    
 
     .carousel .carousel-control {
         height: 60px !important;
@@ -81,36 +65,14 @@ import Card from './Cards/Card.vue'
 
 }
 
-.hero-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-}
 
 
-.carousel {
-    padding: 0 60px;
-}
 
-.card-container {
-    display: flex;
-    gap: 1%;
-}
 
-@media only screen and (max-width:800px) {
-    .card-container {
-        display: block;
-        gap: 0%;
 
-    }
 
-    .carousel {
-        margin: 0;
-    }
-}
+
+
 
 .carousel .carousel-control {
     height: 100px;
