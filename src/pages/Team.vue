@@ -7,28 +7,43 @@ import "../assets/styles/App.scss"
 
 <template>
     <Navbar />
-    <div style="background-color: #EAF7F3;padding: 135px 120px;">
+    <div class="py-4 px-6 -z-0 " style="background-color: #EAF7F3;">
 
         <div class="demo">
-            <div class="container">
+            <div class=" md:px-9">
                 <div class="row text-center">
-                    <div class="C49 text-center">
+                    <div class="C49 text-[#0E0E0E] text-[3.08rem] font-semibold text-center">
                         Our Team
                     </div>
                     <!-- <h1 class="heading-title"> Our Team Style </h1> -->
                 </div>
 
-                <div class="row">
+                <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
                     <div class="col-md-3 col-sm-6">
                         <div class="our-team">
                             <div class="pic">
                                 <img src='../assets/icons/teams1.png' alt="">
                             </div>
-                            <div class="C31 mt-3">
+                            <div class="font-bold text-xl mt-3">
                                 Taiwo Ogunwumi
                             </div>
-                            <div class="M16 mt-2">
+                            <div class="M16 tracking-wide mt-2">
                                 PRESIDENT
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src='../assets/icons/teams2.png' alt="">
+                            </div>
+                            <div class="font-bold text-xl mt-3">
+                                Opeyemi Olatunde
+                            </div>
+                            <div class="M16 tracking-wide mt-2">
+                                CHIEF OPERATING OFFICER
                             </div>
                         </div>
                     </div>
@@ -36,16 +51,87 @@ import "../assets/styles/App.scss"
                     <div class="col-md-3 col-sm-6">
                         <div class="our-team">
                             <div class="pic">
-                                <img src='../assets/icons/teams2.png' alt="">
+                                <img src='../assets/icons/teams3.png' alt="">
                             </div>
-                            <div class="C31 mt-3">
+                            <div class="font-bold text-xl mt-3">
                                 Opeyemi Olatunde
                             </div>
-                            <div class="M16 mt-2">
+                            <div class="M16 tracking-wide mt-2">
                                 CHIEF OPERATING OFFICER
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src='../assets/icons/teams4.png' alt="">
+                            </div>
+                            <div class="font-bold text-xl mt-3">
+                                Opeyemi Olatunde
+                            </div>
+                            <div class="M16 tracking-wide mt-2">
+                                CHIEF OPERATING OFFICER
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src='../assets/icons/teams5.png' alt="">
+                            </div>
+                            <div class="font-bold text-xl mt-3">
+                                Opeyemi Olatunde
+                            </div>
+                            <div class="M16 tracking-wide mt-2">
+                                CHIEF OPERATING OFFICER
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src='../assets/icons/teams6.png' alt="">
+                            </div>
+                            <div class="font-bold text-xl mt-3">
+                                Opeyemi Olatunde
+                            </div>
+                            <div class="M16 tracking-wide mt-2">
+                                CHIEF OPERATING OFFICER
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src='../assets/icons/teams7.png' alt="">
+                            </div>
+                            <div class="font-bold text-xl mt-3">
+                                Opeyemi Olatunde
+                            </div>
+                            <div class="M16 tracking-wide mt-2">
+                                CHIEF OPERATING OFFICER
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src='../assets/icons/teams8.png' alt="">
+                            </div>
+                            <div class="font-bold text-xl mt-3">
+                                Opeyemi Olatunde
+                            </div>
+                            <div class="M16 tracking-wide mt-2">
+                                CHIEF OPERATING OFFICER
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

@@ -135,7 +135,7 @@ const NavData = [
         links: [
             {
                 id: 1,
-                to: "/",
+                to: "/insights",
                 desc: "Insights",
             },
             {

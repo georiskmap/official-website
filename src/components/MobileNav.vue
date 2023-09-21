@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex flex-col rounded-md items-center justify-between">
+    <nav class="flex flex-col z-50 rounded-md items-center justify-between">
         <ul
             class="flex flex-col absolute  top-[12.5%] right-1 bottom-0 w-fit space-y-4 bg-brandgreen text-black p-4 lg:hidden">
             <li v-for="navlink in NavData" :key="navlink.name">
