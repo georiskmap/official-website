@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.16",
-    "pinia": "^2.0.32",
+    "pinia": "^2.1.6",
     "sass": "^1.62.1",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6",

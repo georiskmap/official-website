@@ -2,7 +2,7 @@
 
 <template>
   <div class="flex flex-col items-center justify-center">
-    <div class="text-brandgreen mb-4 md:mb-[65px] font-semibold text-[2.2rem] flex justify-content-center" style="padding-top: 14px;">
+    <div class="text-brandgreen cabin mb-4 md:mb-[65px] font-semibold text-[2.2rem] flex justify-content-center" style="padding-top: 14px;">
       Partners
     </div>
 <AutoPlayCarousel />

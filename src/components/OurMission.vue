@@ -5,13 +5,13 @@
     <div class="container-section">
         <div class="" style="padding:78px 0;">
             <div class="hero-text w-full">
-                    <div class="text-tertiary font-semibold text-[1.5rem] md:text-[2.4rem] text-center mb-8">OUR MISSION</div>
+                    <div class="text-tertiary font-semibold text-[1.5rem] md:text-[2.4rem] cabin text-center mb-8">OUR MISSION</div>
                 </div>
                 
                 <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
                     <div  class="text-center flex justify-center items-center flex-col">
                             <img src='../assets/icons/our_mission1.png' class="img-fluid" alt="Responsive image">
-                            <div class="text-textgreen text-[1.2rem]" style="max-width: 354px; margin-top: 34px;">
+                            <div class="text-textgreen merri text-[1.2rem]" style="max-width: 354px; margin-top: 34px;">
                                 Identify
                                 locations
                                 in
@@ -23,7 +23,7 @@
 
                         <div class="text-center flex justify-center items-center flex-col">
                             <img src='../assets/icons/our_mission2.png' class="img-fluid" alt="Responsive image">
-                            <div class="M20 text-textgreen text-[1.2rem]" style="max-width: 354px; margin-top: 34px;">
+                            <div class="M20 merri text-textgreen text-[1.2rem]" style="max-width: 354px; margin-top: 34px;">
                                 Produce Hazard
                                 susceptibility
                                 and prediction maps
@@ -32,7 +32,7 @@
 
                     <div  class="text-center flex justify-center items-center flex-col">
                             <img src='../assets/icons/our_mission3.png' class="img-fluid" alt="Responsive image">
-                            <div class="M20 text-textgreen text-[1.2rem]" style="max-width: 354px; margin-top: 34px;">
+                            <div class="M20 merri text-textgreen text-[1.2rem]" style="max-width: 354px; margin-top: 34px;">
                                 Share with
                                 Disaster
                                 and
@@ -44,7 +44,7 @@
 
                         <div  class="text-center flex justify-center items-center flex-col">
                             <img src='../assets/icons/our_mission4.png' class="img-fluid" alt="Responsive image">
-                            <div class="M20 text-textgreen text-[1.2rem]" style="max-width: 354px; margin-top: 34px;">
+                            <div class="M20 merri text-textgreen text-[1.2rem]" style="max-width: 354px; margin-top: 34px;">
                                 Use of maps for
                                 efficient
                                 disaster preparedness,

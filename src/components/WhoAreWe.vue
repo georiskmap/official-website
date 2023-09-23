@@ -1,8 +1,8 @@
 <template>
     <div class="container-section flex justify-center items-center flex-col">
         <div class="hero-text text-white pt-12 py-6 md:py-8 mx-auto w-full md:w-[90%]">
-                    <div class="text-[1.9rem] uppercase text-center md:text-[3.06rem] font-semibold ">Who are we?</div>
-                    <p class=" leading-8 text-center  md:leading-18 w-full text-[1.1rem] md:text-[1.52rem]" style="margin: 40px 0 64px 0;">In line with the Sustainable Development Goal 11
+                    <div class="text-[1.9rem] uppercase cabin text-center md:text-[3.06rem] font-semibold ">Who are we?</div>
+                    <p class=" leading-8 text-center  merri md:leading-18 w-full text-[1rem] md:text-[1.32rem]" style="margin: 40px 0 64px 0;">In line with the Sustainable Development Goal 11
                         (Sustainable Cities and Communities), Goal
                         13
                         (Climate

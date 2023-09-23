@@ -8,7 +8,7 @@ const showMenu = ref(false);
 </script>
 
 <template>
-  <nav class="h-28 bg-brandgray text-white">
+  <nav class="h-28 bg-brandgray/50 text-white">
 <div class="flex mx-auto w-[95%] md:w-[90%] items-center justify-between py-4 ">
   
 <div class="flex   ">
@@ -25,7 +25,7 @@ const showMenu = ref(false);
 </div>
 
 <div class="lg:flex hidden">
-      <button class="px-6 py-4 text-lg bg-brandgreen">View Water Level</button>
+      <button class="px-6 py-4 text-lg bg-brandgreen text-white hover:text-brandgreen hover:bg-white hover:outline-2 shadow-md  merri">View Water Level</button>
       
    
     </div>

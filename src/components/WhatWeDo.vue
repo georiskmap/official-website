@@ -7,8 +7,8 @@
             
             <div class="container m-auto text-center py-[78px] w-full" >
                 <div class="hero-text ">
-                        <div class="text-[1.4rem] md:text-[2.2rem] uppercase font-semibold text-center" style="margin-bottom: 55px;">What we do</div>
-                        <p class="text-center leading-20 text-[1rem] md:text-[1.5rem]">
+                        <div class="text-[1.4rem] cabin md:text-[2.2rem] uppercase font-semibold text-center" style="margin-bottom: 55px;">What we do</div>
+                        <p class="text-center merri leading-20 text-[1rem] md:text-[1.5rem]">
                             GeoHazards Risk Mapping Initiative is focused on deploying volunteer youths who are skilled at
                             using
                             Geographic

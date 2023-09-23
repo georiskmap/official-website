@@ -1,12 +1,12 @@
 <template>
     <Carousel v-bind="settings" :breakpoints="breakpoints">
-      <Slide v-for="slide in 10" :key="slide">
-        <div class="connection-card">
+      <Slide   v-for="slide in 10" :key="slide">
+        <div  class="connection-card">
         <div class="card text-white h-[450px] w-[300px] md:w-[350px] rounded-lg flex items-end" style="background-image:url('https://hdwallpaperim.com/wp-content/uploads/2017/08/25/128936-Turkey-Istanbul-building.jpg');
         background-size: cover; background-repeat: no-repeat;background-position: center;">
                
                 <div class="flex flex-col p-3 w-full">
-                  <div class="flex flex-col" style="padding: 0;">
+                  <div class="flex flex-col merri" style="padding: 0;">
                             <div class="media-body flex flex-col" style="align-items: flex-start;">
                                 <div class="M20 white font-normal text-[1.4rem] d-block" style="margin-bottom: 4px;">
                                     Benue
@@ -15,20 +15,27 @@
                                     Nigeria
                                 </div>
                             </div>
-                            <button class="w-full bg-[#FFF] font-semibold text-[1.1rem] rounded-md text-tertiary py-4 px-5 min-w-[100px]">
-                                View Maps
-                            </button>
+                            
+                            <button @click="showIframe(slide)" class="w-full hover:bg-brandgreen hover:text-white bg-[#FFF] font-semibold text-[1.1rem] rounded-md text-tertiary py-4 px-5 min-w-[100px]">
+                View Maps
+              </button>
+                           
+            
+                   
+    <iframe v-if="iframeVisible && slide === selectedSlide" :src="iframeSrc" class="w-[800px] h-[800px]" :style="{ position: 'absolute', top: 0, left: 0, zIndex: 100 }"></iframe>
                            
                         </div>
                 </div>
             </div>
     </div>
       </Slide>
+      
   
       <template #addons>
         <Navigation />
       </template>
     </Carousel>
+
   </template>
   <style  >
 .carousel__slide--sliding {
@@ -69,12 +76,33 @@
 }
 </style>
   
-  <script>
-  import { defineComponent } from 'vue'
+  <script >
+  import { defineComponent, ref } from 'vue'
+  // import {useFrameStore} from "../../store/store"
   import { Carousel, Navigation, Slide } from 'vue3-carousel'
   
-  import 'vue3-carousel/dist/carousel.css'
   
+  import 'vue3-carousel/dist/carousel.css'
+
+
+  // const store = useFrameStore()
+  const iframeVisible = ref(false);
+const selectedSlide = ref(null);
+const iframeSrc = ref(null);
+// console.log(store.iframeVisible)
+
+
+function showIframe(slide) {
+  iframeVisible.value = true;
+  selectedSlide.value = slide;
+  iframeSrc.value = 'https://res.cloudinary.com/waleszn/image/upload/v1692393849/bg-2-home-5_n9sj9c.jpg'
+}
+
+function closeIframe() {
+  iframeVisible.value = false;
+}
+
+
   export default defineComponent({
     name: 'Breakpoints',
     components: {
@@ -83,6 +111,11 @@
       Navigation,
     },
     data: () => ({
+     showIframe: showIframe,
+     selectedSlide: selectedSlide,
+     iframeSrc: iframeSrc,
+     iframeVisible : iframeVisible ,
+     closeIframe: closeIframe,
       // carousel settings
       settings: {
         itemsToShow: 1,

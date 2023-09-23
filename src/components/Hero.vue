@@ -1,19 +1,14 @@
 <script>
-import CustomButton from './Buttons/Button.vue'
 
-export default {
-  components: {
-    CustomButton,
-  },
-};
+
 </script>
 
 <template>
   <div class="hero-image">
     <div class="hero-text h-full flex flex-col w-full justify-center items-center ">
-            <h1 class="text-[2.2rem] md:text-[2.45rem] text-center   lg:text-[3.831rem]  font-semibold">GeoHazards; Predict, Prepare, and Protect.</h1>
+            <h1 class="text-[2.2rem] md:text-[2.45rem] text-center cabin  lg:text-[3.831rem]  font-semibold">GeoHazards; Predict, Prepare, and Protect.</h1>
 
-            <p class="M20 white text-[0.8rem] md:text-[1.4rem] leading-[2rem] text-center" style="margin-bottom: 16px;">Promoting a sustainable environment
+            <p class="M20 white text-[0.8rem] md:text-[1.4rem] merri leading-[2rem] text-center" style="margin-bottom: 16px;">Promoting a sustainable environment
               through
               the
               development,

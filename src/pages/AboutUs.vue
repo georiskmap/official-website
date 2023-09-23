@@ -13,8 +13,8 @@ import "../assets/styles/App.scss"
 
         <div class="row">
           <div class="hero-container w-100">
-            <div class="hero-text  text-center text-[3.8125rem] w-100">
-              <div class="C61 white">About GRMI</div>
+            <div class="hero-text  text-center  w-100">
+              <div class="C61 white text-[3.8125rem] cabin">About GRMI</div>
             </div>
             <div>
               <CustomButton btn-text="Click me" type="success" size="lg" />
@@ -33,7 +33,7 @@ import "../assets/styles/App.scss"
         <div class="row justify-content-center">
           <div class="">
             <div class="border-light p-20 " style="background-color: #FFFFFF;">
-              <div class="text-[2rem] font-semibold heading">
+              <div class="text-[2rem] cabin font-semibold heading">
                 WHO ARE WE?
               </div>
               <div class="card-body">
@@ -148,7 +148,10 @@ import "../assets/styles/App.scss"
 }
 
 
+.text-container p{
+  font-family: 'Merriweather', serif;
 
+}
 .text-container p span {
   display: block;
   padding: 37px 0;

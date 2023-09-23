@@ -66,12 +66,12 @@ const NavData = [
             },
             {
                 id: 2,
-                to: "/",
+                to: "/proposed-projects",
                 desc: "Proposed",
             },
             {
                 id: 3,
-                to: "/",
+                to: "/ongoing-projects",
                 desc: "Ongoing",
 
             },

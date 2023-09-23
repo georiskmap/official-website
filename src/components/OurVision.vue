@@ -3,10 +3,10 @@
 
 <template>
     <div class="container-section">
-        <div class="container m-auto" style="padding:78px 0;">
+        <div class=" m-auto" style="padding:78px 0;">
             <div class="hero-text text-center w-100">
-                    <div class=" uppercase font-semibold text-[1.5rem] md:text-[3rem]  text-tertiary"> Our Vision</div>
-                    <p class="M31 leading-18 text-[1.5rem] text-tertiary" style="margin-top: 27px;">
+                    <div class=" uppercase font-semibold cabin text-[1.5rem] md:text-[3rem]  text-tertiary"> Our Vision</div>
+                    <p class="M31 leading-18 merri text-[1.5rem] text-tertiary" style="margin-top: 27px;">
                         To promote a sustainable environment through the development, generating applications, and
                         dissemination of
                         Geohazard maps using advanced Geospatial Technology.

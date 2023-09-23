@@ -24,10 +24,10 @@ import "../assets/styles/App.scss"
                             <div class="pic">
                                 <img src='../assets/icons/teams1.png' alt="">
                             </div>
-                            <div class="font-bold text-xl mt-3">
+                            <div class="font-bold cabin text-xl mt-3">
                                 Taiwo Ogunwumi
                             </div>
-                            <div class="M16 tracking-wide mt-2">
+                            <div class="M16 merri tracking-wide mt-2">
                                 PRESIDENT
                             </div>
                         </div>

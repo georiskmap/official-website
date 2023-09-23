@@ -33,8 +33,8 @@ export default {
             </div>
            
 
-            <div class="flex flex-col items-start justify-start" >
-                <div class="M20 white" style="font-weight: 700;margin-bottom: 24px;">QUICKLINKS</div>
+            <div class="flex flex-col merri items-start justify-start" >
+                <div class="M20 white cabin" style="font-weight: 700;margin-bottom: 24px;">QUICKLINKS</div>
 
                 <router-link class="M16 white links" @click="scrollToTop" to="/about" style="margin-bottom: 12px; font-weight: 300;">
                     About GRMI
@@ -74,14 +74,14 @@ export default {
             </div>
 
             <div class="flex flex-col justify-start items-start" >
-                <div class="M20 white" style="font-weight: 700;margin-bottom: 24px">CONTACT</div>
-                <span class="M16 white">mails@georiskmap.org</span>
+                <div class="M20 white cabin" style="font-weight: 700;margin-bottom: 24px">CONTACT</div>
+                <span class="M16 white merri">mails@georiskmap.org</span>
             </div>
 
             <section class="newsletter">
                 
                             <div class="content" style="text-align: left;">
-                                <div class="w-full white text-[1.5rem] font-semibold" style="margin-bottom: 24px;">
+                                <div class="w-full white cabin text-[1.5rem] font-semibold" style="margin-bottom: 24px;">
                                     Subscribe to our Newsletter
                                 </div>
                                 <div class="input-group">
@@ -99,7 +99,7 @@ export default {
             </section>
         </div>
 
-            <div class="flex text-center flex-col w-full justify-center items-center" style="margin-top: 114px;">
+            <div class="flex merri text-center flex-col w-full justify-center items-center" style="margin-top: 114px;">
                 <div class="M13 white d-flex justify-content-center mb-3">
                     2020 - 2023 georiskmap.org © ALL RIGHTS RESERVED
                     <!-- <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
