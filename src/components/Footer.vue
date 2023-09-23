@@ -81,7 +81,7 @@ export default {
             <section class="newsletter">
                 
                             <div class="content" style="text-align: left;">
-                                <div class="w-full white cabin text-[1.5rem] font-semibold" style="margin-bottom: 24px;">
+                                <div class="w-full white cabin text-[1.7rem] font-semibold" style="margin-bottom: 24px;">
                                     Subscribe to our Newsletter
                                 </div>
                                 <div class="input-group">

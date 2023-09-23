@@ -1,8 +1,8 @@
 <template>
-    <Carousel v-bind="settings" :breakpoints="breakpoints">
+    <Carousel :transition="300" v-bind="settings" :breakpoints="breakpoints">
       <Slide   v-for="slide in 10" :key="slide">
         <div  class="connection-card">
-        <div class="card text-white h-[450px] w-[300px] md:w-[350px] rounded-lg flex items-end" style="background-image:url('https://hdwallpaperim.com/wp-content/uploads/2017/08/25/128936-Turkey-Istanbul-building.jpg');
+        <div class="card m-3 text-white h-[450px] w-[300px] md:w-[350px] rounded-lg flex items-end" style="background-image:url('https://hdwallpaperim.com/wp-content/uploads/2017/08/25/128936-Turkey-Istanbul-building.jpg');
         background-size: cover; background-repeat: no-repeat;background-position: center;">
                
                 <div class="flex flex-col p-3 w-full">
@@ -59,7 +59,8 @@
 
 .carousel__slide{
   height: 480px;
-  width: 300px;
+  width: 290px;
+  padding: 5px;
 }
 
 
