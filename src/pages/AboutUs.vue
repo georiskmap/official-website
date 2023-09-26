@@ -9,12 +9,12 @@ import "../assets/styles/App.scss"
   <Navbar />
   <div style="background-color: #EAF7F3;">
     <div class="hero-image">
-      <div class="container">
+      <div class="">
 
         <div class="row">
           <div class="hero-container w-100">
-            <div class="hero-text w-100">
-              <div class="C61 white">About GRMI</div>
+            <div class="hero-text  text-center  w-100">
+              <div class="C61 white text-[3.8125rem] cabin">About GRMI</div>
             </div>
             <div>
               <CustomButton btn-text="Click me" type="success" size="lg" />
@@ -29,18 +29,18 @@ import "../assets/styles/App.scss"
 
 
     <div class="section section-lg pt-0">
-      <div class="container mt-n8 mt-lg-n13 z-2">
+      <div class=" mt-n8 mt-lg-n13 z-2">
         <div class="row justify-content-center">
-          <div class="col-12">
-            <div class="border-light p-2 p-md-4 p-lg-5" style="background-color: #FFFFFF;">
-              <div class="C61 heading">
+          <div class="">
+            <div class="border-light p-20 " style="background-color: #FFFFFF;">
+              <div class="text-[2rem] cabin font-semibold heading">
                 WHO ARE WE?
               </div>
               <div class="card-body">
-
-                <div class="row">
-                  <div class="col-12 col-md-6 text-container">
-                    <p>
+                <div class="">
+                  <div class="flex mt-5 lg:flex-row flex-col  justify-between gap-8 ">
+                    <div class="text-justify flex space-y-4 flex-col leading-12 text-container">
+                    <p class="leading-[1.5rem]">
                       In harmonious progression with the principles of Sustainable Development Goals 11 (Sustainable Cities and Communities) and 13 (Climate Action), we are embarking on a pioneering endeavor that aligns with the core objectives of the Sendai Framework for Disaster Risk Reduction. Our goal is to amplify the availability and accessibility of multi-hazard early warning systems, alongside comprehensive disaster risk information and assessments by the year 2030.
                       </p>
 
@@ -60,15 +60,16 @@ import "../assets/styles/App.scss"
                       ● Ensuring these early warning signal maps are accessible to the broader public, forming a nexus of information that benefits emergency institutions and stakeholders alike, fostering a community united in resilience and preparedness.
                     </p>
                   </div>
-                  <div class="col-12 col-md-6 text-center" style="margin-top: 37px;">
-                    <iframe width="460" height="315" 
+                  <div class="col-12 col-md-6 text-center" >
+                    <iframe class="w-[200px] h-[200px] md:w-[350px] md:h-[380px] lg:w-[450px] lg:h-[480px]" 
                       src="https://www.youtube.com/embed/sAx462Sc004?si=uClXD1ueAA_bv1tz&amp;start=1" 
                       title="YouTube video player" frameborder="0" 
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                       allowfullscreen>
                     </iframe>
                   </div>
-                  <div class="images-container">
+                  </div>
+                  <div class="images-container ">
                     <img class="item" src='../assets/icons/about_us1.png'>
                     <img class="item" src='../assets/icons/about_us2.png'>
                     <img class="item" src='../assets/icons/about_us3.png'>
@@ -105,7 +106,7 @@ import "../assets/styles/App.scss"
 }
 
 .hero-text {
-  padding: 0 40px 0 40px;
+ 
   color: white;
 }
 
@@ -146,10 +147,11 @@ import "../assets/styles/App.scss"
   margin: 0 120px;
 }
 
-.text-container {
-  padding: 0;
-}
 
+.text-container p{
+  font-family: 'Merriweather', serif;
+
+}
 .text-container p span {
   display: block;
   padding: 37px 0;

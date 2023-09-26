@@ -1,10 +1,15 @@
+
+
 <template>
-  <div>
-    <div class="C61 primary-900 w-100 d-flex justify-content-center" style="padding-top: 14px; margin-bottom: 65px;">
+  <div class="flex flex-col items-center justify-center">
+    <div class="text-brandgreen cabin mb-4 md:mb-[65px] font-semibold text-[2.2rem] flex justify-content-center" style="padding-top: 14px;">
       Partners
     </div>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" style="margin-bottom: 54px;">
-      <div class="carousel-inner">
+<AutoPlayCarousel />
+    
+
+    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" style="margin-bottom: 54px;">
+      <div class="carousel-inner flex">
         <div class="carousel-item active">
           <div class="row">
             <div class="col">
@@ -38,8 +43,17 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
+<script >
+import AutoPlayCarousel from './carousel/AutoPlayCarousel.vue';
+import Carousel from './carousel/Carousel.vue';
+import {defineComponent} from 'vue'
+
+export default defineComponent({
+  components: { AutoPlayCarousel }
+})
+</script>
 
 <style scoped></style>

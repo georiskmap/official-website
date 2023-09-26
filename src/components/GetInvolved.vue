@@ -1,19 +1,16 @@
 <script setup>
-import CustomButton from './Buttons/Button.vue'
 
 </script>
 
 <template>
-    <div class="hero-image">
-        <div class="container" style="padding:78px 0;">
-            <div class="row mt-4 d-flex justify-content-center">
-                <div class="hero-text w-100">
-                    <div class="C49 white" style="margin-bottom: 16px;max-width: 880px;">
-                        We are always looking to expand our team. If you are a GIS Specialist we would love to work with
-                        you.
+    <div class="hero-image flex justify-center items-center">
+        <div class="hero-text w-full flex justify-center items-center">
+                    <div class="flex max-w-[700px] items-center justify-center mb-4 ">
+                        <h5 class="text-[1.5rem] cabin md:text-[1.8rem] font-semibold  lg:text-[2.4rem] white">We are always looking to expand our team. If you are a GIS Specialist we would love to work with
+                        you.</h5>
                     </div>
 
-                    <p class="M20 white" style="max-width: 1166px; margin-bottom: 32px;">
+                    <p class="M20 max-w-[900px] merri  lg:text-[1rem] leading-12 text-center" >
                         Join us in this vital endeavor as we work together to promote a sustainable environment, 
                         
                         safeguarding present and future generations from the adverse effects of climate change. 
@@ -22,10 +19,12 @@ import CustomButton from './Buttons/Button.vue'
                         
                         against the trials of geohazards.
                     </p>
+
+                    <button class="btn shadow-sm merri  bg-brandgreen hover:text-brandgreen hover:bg-white  mt-8">
+                    Get Involved
+                </button>
                 </div>
-                <CustomButton class="M16 btn-success" btn-text="Get Involved" type="success" size="lg" />
-            </div>
-        </div>
+             
     </div>
 </template>
 
@@ -34,6 +33,7 @@ import CustomButton from './Buttons/Button.vue'
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../assets/icons/get_involved.png');
     background-position: center;
     background-repeat: no-repeat;
+    height: 70vh;
     background-size: cover;
     padding: 0 40px 0 40px;
 }
@@ -47,19 +47,17 @@ import CustomButton from './Buttons/Button.vue'
     color: white;
 }
 
-.hero-text button {
-    border: none;
-    outline: 0;
+.btn {
+   
     display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
+    padding: 15px 60px;
+  transition-delay: 100ms;
+  
+    border-radius: 3px;
+    
     text-align: center;
     cursor: pointer;
 }
 
-.hero-text button:hover {
-    background-color: #555;
-    color: white;
-}
+
 </style>

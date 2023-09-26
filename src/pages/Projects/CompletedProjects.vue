@@ -8,15 +8,15 @@ import "../../assets/styles/App.scss"
 
 <template>
     <Navbar />
-    <div style="background-color: #EAF7F3;padding: 135px 120px 50px 120px;min-height: 100vh;">
+    <div class="py-12 px-8 md:px-20 md" style="background-color: #EAF7F3;min-height: 100vh;">
         <div>
             <div class="row text-center mb-5">
-                <div class="C49 text-center">
+                <div class="C49 cabin text-[3rem] font-bold text-center">
                     COMPLETED PROJECTS
                 </div>
             </div>
 
-            <div class="row justify-content-center" style="min-width: 300px;">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4" >
                 <Card class="custom-card" />
                 <Card class="custom-card" />
                 <Card class="custom-card" />
@@ -26,6 +26,8 @@ import "../../assets/styles/App.scss"
                 <Card class="custom-card" />
                 <Card class="custom-card" />
                 <Card class="custom-card" />
+                <Card class="custom-card" />
+
             </div>
 
         </div>

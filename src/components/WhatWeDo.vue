@@ -3,14 +3,12 @@
 </script>
 
 <template>
-    <div>
-        <div class="container-section">
-            <div class="container" style="padding:78px 0;">
-                <div class="row mt-4">
-
-                    <div class="hero-text w-100">
-                        <div class="C49 white" style="margin-bottom: 55px;">What we do</div>
-                        <p class="M31 white">
+      <div class="container-section w-full">
+            
+            <div class="container m-auto text-center py-[78px] w-full" >
+                <div class="hero-text ">
+                        <div class="text-[1.4rem] cabin md:text-[2.2rem] uppercase font-semibold text-center" style="margin-bottom: 55px;">What we do</div>
+                        <p class="text-center merri leading-20 text-[1rem] md:text-[1.5rem]">
                             GeoHazards Risk Mapping Initiative is focused on deploying volunteer youths who are skilled at
                             using
                             Geographic
@@ -24,10 +22,8 @@
                             as a result of Climate Change.
                         </p>
                     </div>
-                </div>
             </div>
         </div>
-    </div>
 </template>
 
 <style scoped>
@@ -46,7 +42,7 @@
 
 @media (max-width: 767px) {
     .container-section {
-        padding: 0 60px 0 60px;
+        padding: 0 20px 0 20px;
     }
 
 }
