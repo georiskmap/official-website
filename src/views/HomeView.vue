@@ -12,6 +12,7 @@ import GetInvolved from '../components/GetInvolved.vue'
 import Footer from '../components/Footer.vue'
 // import "../assets/styles/main.scss"
 import "../assets/styles/App.scss"
+import ShowMap from '../components/modals/ShowMap.vue'
 
 import { useFrameStore } from '../store/store'
 import { storeToRefs } from 'pinia'
@@ -26,7 +27,7 @@ const {closeFrame} = store
   <div id="app">
    
     <Navbar />
-    
+   <ShowMap />
     <Hero />
     <Partners />
     <WhoAreWe />
@@ -36,7 +37,6 @@ const {closeFrame} = store
     <AppsAndData />
     <GetInvolved />
     <Footer />
-    <!-- <iframe  src="https://res.cloudinary.com/waleszn/image/upload/v1692393849/bg-2-home-5_n9sj9c.jpg" class="mx-auto w-[60%] h-[80vh] absolute top-[12%] left-[20%] " :style="{ position: 'fixed',  zIndex: 100 }"></iframe> -->
-          
+              
   </div>
 </template>

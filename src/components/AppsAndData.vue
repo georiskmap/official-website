@@ -1,5 +1,4 @@
 <script setup>
-import Card from './Cards/Card.vue'
 import Carousel from './carousel/Carousel.vue';
 </script>
 
