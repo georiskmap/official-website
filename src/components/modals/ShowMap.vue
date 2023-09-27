@@ -30,7 +30,8 @@
                 class="w-full max-w-[1400px] transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all"
               >
               <div>
-                <img src="https://res.cloudinary.com/waleszn/image/upload/v1692393849/bg-2-home-5_n9sj9c.jpg" alt="" srcset="">
+                <h3 class="text-xl uppercase">{{ slide.state }}</h3>
+                <img class="w-full" :src="props.slide.map_url" alt="" srcset="">
               </div>
   
                 <div class="mt-4">
@@ -62,11 +63,13 @@
 import { computed } from 'vue'
   const props = defineProps({
     // isOpen Boolean,
+    slide: Object,
     closeModal: Function,
     openModal: Function,
     show: Boolean,
 
   })
+
 
   const emits = defineEmits(['update:show'])
 

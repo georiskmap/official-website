@@ -1,26 +1,25 @@
 <template>
   <Carousel :transition="300" v-bind="settings" :breakpoints="breakpoints">
-    <Slide v-for="slide in 10" :key="slide">
-      <div @click="sel(slide)" class="connection-card">
-        <div class="card m-3 text-white h-[450px] w-[300px] md:w-[350px] rounded-lg flex items-end" style="background-image:url('https://hdwallpaperim.com/wp-content/uploads/2017/08/25/128936-Turkey-Istanbul-building.jpg');
-        background-size: cover; background-repeat: no-repeat;background-position: center;">
+    <Slide v-for="slide in AppsData" :key="slide.id">
+      <div  class="connection-card">
+        <div class="card m-3 text-white h-[450px] w-[300px] md:w-[350px] rounded-lg flex items-end" :style="{'background-image':`url(${slide.map_url})`,
+        'background-size': 'cover', 'background-repeat': 'no-repeat','background-position': 'center'}">
 
           <div class="flex flex-col p-3 w-full">
             <div class="flex flex-col merri" style="padding: 0;">
               <div class="media-body flex flex-col" style="align-items: flex-start;">
-                <div class="M20 white font-normal text-[1.4rem] d-block" style="margin-bottom: 4px;">
-                  Benue
+                <div class="M20 text-brandgreen font-normal text-[1.4rem] d-block" style="margin-bottom: 4px;">
+                 {{ slide.state }}
                 </div>
-                <div class=" text-[#fff]" style="margin-bottom: 8px;">
-                  Nigeria
+                <div class=" text-brandgreen font-bold" style="margin-bottom: 8px;">
+                 {{ slide.country }}
                 </div>
               </div>
 
-              <button @click="showIframe"
+              <button @click="showIframe(slide)"
                 class="w-full hover:bg-brandgreen hover:text-white bg-[#FFF] font-semibold text-[1.1rem] rounded-md text-tertiary py-4 px-5 min-w-[100px]">
                 View Maps
               </button>
-              <ShowMap v-model:show="isOpen" :closeFrame="closeModal" />
 
 
 
@@ -35,6 +34,9 @@
       <Navigation />
     </template>
   </Carousel>
+
+  <ShowMap  v-if="isOpen" :slide="selectedSlide"    v-model:show="isOpen" :closeFrame="closeModal" />
+
 </template>
 <style  >
 .carousel__slide--sliding {
@@ -83,7 +85,7 @@
 import { defineComponent, ref } from 'vue'
 // import {useFrameStore} from "../../store/store"
 import { Carousel, Navigation, Slide } from 'vue3-carousel'
-
+import AppsData from "../../utils/AppsData"
 import ShowMap from '../modals/ShowMap.vue';
 import 'vue3-carousel/dist/carousel.css'
 
@@ -92,15 +94,17 @@ import 'vue3-carousel/dist/carousel.css'
 const iframeVisible = ref(false);
 const selectedSlide = ref(null);
 const iframeSrc = ref(null);
-// console.log(store.iframeVisible)
 const isOpen = ref(false)
 
 const sel = (slide) => {
   selectedSlide.value = slide
 }
-function showIframe() {
-  isOpen.value = true
- 
+
+function showIframe(slide) {
+  selectedSlide.value = slide
+ if(selectedSlide.value.id){
+   isOpen.value = true
+ } 
 }
 
 function closeIframe() {
@@ -134,6 +138,7 @@ export default defineComponent({
     openModal: openModal,
     closeModal: closeModal,
     sel: sel,
+    AppsData: AppsData,
     isOpen: isOpen,
     // carousel settings
     settings: {

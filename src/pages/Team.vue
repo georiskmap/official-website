@@ -7,7 +7,7 @@ import "../assets/styles/App.scss"
 
 <template>
     <Navbar />
-    <div class="py-4 px-6 -z-0 " style="background-color: #EAF7F3;">
+    <div class="py-4 px-6 " style="background-color: #EAF7F3;">
 
         <div class="demo">
             <div class=" md:px-9">

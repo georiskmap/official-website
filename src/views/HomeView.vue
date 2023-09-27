@@ -14,12 +14,7 @@ import Footer from '../components/Footer.vue'
 import "../assets/styles/App.scss"
 import ShowMap from '../components/modals/ShowMap.vue'
 
-import { useFrameStore } from '../store/store'
-import { storeToRefs } from 'pinia'
 
-const store = useFrameStore()
-const { iframeSrc, iframeVisible } = storeToRefs(store)
-const {closeFrame} = store
 </script>
 
 
