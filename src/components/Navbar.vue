@@ -8,7 +8,7 @@ const showMenu = ref(false);
 </script>
 
 <template>
-  <nav class="h-24 lg:h-28 bg-brandgray/50 text-white">
+  <nav class=" lg:h-28 bg-brandgray/50 text-white">
 <div class="flex mx-auto w-[95%] md:w-[90%] items-center justify-between py-4 ">
   
 <div class="flex   ">
