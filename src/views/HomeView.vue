@@ -12,7 +12,6 @@ import GetInvolved from '../components/GetInvolved.vue'
 import Footer from '../components/Footer.vue'
 // import "../assets/styles/main.scss"
 import "../assets/styles/App.scss"
-import ShowMap from '../components/modals/ShowMap.vue'
 
 
 </script>
@@ -22,7 +21,7 @@ import ShowMap from '../components/modals/ShowMap.vue'
   <div id="app">
    
     <Navbar />
-   <ShowMap />
+ 
     <Hero />
     <Partners />
     <WhoAreWe />

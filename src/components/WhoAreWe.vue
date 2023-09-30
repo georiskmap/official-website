@@ -34,7 +34,7 @@
 
 <style scoped>
 .container-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../assets/icons/who_we_are_bg_image.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://res.cloudinary.com/waleszn/image/upload/v1695971150/HeroImage_zzqmhi.png');
     
     background-position: center;
     background-repeat: no-repeat;

@@ -27,11 +27,11 @@
               leave-to="opacity-0 scale-95"
             >
               <DialogPanel
-                class="w-full max-w-[1400px] transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all"
+                class="w-full  max-w-[1200px] transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all"
               >
-              <div>
+              <div class="">
                 <h3 class="text-xl uppercase">{{ slide.state }}</h3>
-                <img class="w-full" :src="props.slide.map_url" alt="" srcset="">
+                <img class="w-full " :src="props.slide.map_url" alt="" srcset="">
               </div>
   
                 <div class="mt-4">
