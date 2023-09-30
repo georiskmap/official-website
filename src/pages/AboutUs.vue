@@ -32,7 +32,7 @@ import "../assets/styles/App.scss"
       <div class=" mt-n8 mt-lg-n13 z-2">
         <div class="row justify-content-center">
           <div class="">
-            <div class="border-light p-20 " style="background-color: #FFFFFF;">
+            <div class="border-light p-12 lg:p-20 " style="background-color: #FFFFFF;">
               <div class="text-[2rem] cabin font-semibold heading">
                 WHO ARE WE?
               </div>
