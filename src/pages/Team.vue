@@ -22,7 +22,7 @@ import "../assets/styles/App.scss"
                     <div class="">
                         <div class="our-team">
                             <div class="pic">
-                                <img src='https://res.cloudinary.com/waleszn/image/upload/v1695971771/teams1_tegln8.png' alt="">
+                                <img src='https://upcdn.io/12a1yd9/image/teams1.png' alt="">
                             </div>
                             <div class="font-bold cabin text-xl mt-3">
                                 Taiwo Ogunwumi
@@ -51,7 +51,7 @@ import "../assets/styles/App.scss"
                     <div class="col-md-3 col-sm-6">
                         <div class="our-team">
                             <div class="pic">
-                                <img src='https://res.cloudinary.com/waleszn/image/upload/v1695971901/teams3_ijaaee.png' alt="">
+                                <img src='https://upcdn.io/12a1yd9/image/teams2.png' alt="">
                             </div>
                             <div class="font-bold text-xl mt-3">
                                 Opeyemi Olatunde
@@ -65,7 +65,7 @@ import "../assets/styles/App.scss"
                     <div class="col-md-3 col-sm-6">
                         <div class="our-team">
                             <div class="pic">
-                                <img src='https://res.cloudinary.com/waleszn/image/upload/v1695972120/teams8_yzmjmh.png' alt="">
+                                <img src='https://upcdn.io/12a1yd9/image/teams3.png' alt="">
                             </div>
                             <div class="font-bold text-xl mt-3">
                                 Opeyemi Olatunde
@@ -79,7 +79,7 @@ import "../assets/styles/App.scss"
                     <div class="col-md-3 col-sm-6">
                         <div class="our-team">
                             <div class="pic">
-                                <img src='https://res.cloudinary.com/waleszn/image/upload/v1695971918/teams5_vdqtkv.png' alt="">
+                                <img src='https://upcdn.io/12a1yd9/image/teams5.png' alt="">
                             </div>
                             <div class="font-bold text-xl mt-3">
                                 Opeyemi Olatunde
@@ -93,7 +93,7 @@ import "../assets/styles/App.scss"
                     <div class="col-md-3 col-sm-6">
                         <div class="our-team">
                             <div class="pic">
-                                <img src='https://res.cloudinary.com/waleszn/image/upload/v1695971910/teams4_l9nfjd.png' alt="">
+                                <img src='https://upcdn.io/12a1yd9/image/teams3.png' alt="">
                             </div>
                             <div class="font-bold text-xl mt-3">
                                 Opeyemi Olatunde
