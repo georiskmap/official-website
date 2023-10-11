@@ -30,7 +30,7 @@
 
 <style scoped>
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://res.cloudinary.com/waleszn/image/upload/v1695971112/get_involved_o72npf.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://upcdn.io/12a1yd9/image/get_involved.png');
     background-position: center;
     background-repeat: no-repeat;
     height: 70vh;
