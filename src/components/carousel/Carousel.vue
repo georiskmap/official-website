@@ -2,16 +2,16 @@
   <Carousel :transition="300" v-bind="settings" :breakpoints="breakpoints">
     <Slide v-for="slide in AppsData" :key="slide.id">
       <div  class="connection-card">
-        <div class="card m-3 text-white h-[450px] w-[300px] md:w-[350px] rounded-lg flex items-end" :style="{'background-image':`url(${slide.map_url})`,
+        <div class="card m-3 text-white h-[450px] w-[300px] md:w-[350px] rounded-lg flex items-end" :style="{'background-image':`url(${slide.placeholder})`,
         'background-size': 'cover', 'background-repeat': 'no-repeat','background-position': 'center'}">
 
           <div class="flex flex-col p-3 w-full">
             <div class="flex flex-col merri" style="padding: 0;">
               <div class="media-body flex flex-col" style="align-items: flex-start;">
-                <div class="M20 text-brandgreen font-normal text-[1.4rem] d-block" style="margin-bottom: 4px;">
-                 {{ slide.state }}
+                <div class="M20 text-white font-normal text-[1.4rem] d-block" style="margin-bottom: 4px;">
+                 {{ slide.lga }}, {{ slide.state }}
                 </div>
-                <div class=" text-brandgreen font-bold" style="margin-bottom: 8px;">
+                <div class=" text-white font-bold" style="margin-bottom: 8px;">
                  {{ slide.country }}
                 </div>
               </div>
