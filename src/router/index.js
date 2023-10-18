@@ -5,6 +5,7 @@ import Team from '../pages/Team.vue'
 import Career from '../pages/Career.vue'
 import CompletedProjects from '../pages/Projects/CompletedProjects.vue'
 import NewsAndMedia from '../pages/NewsAndMedia.vue'
+import EventsPage from "../pages/EventsPage.vue"
 import Insights from '../pages/Insights.vue'
 import ProposedProjects from '../pages/Projects/ProposedProjects.vue'
 import OngoingProject from '../pages/Projects/OngoingProject.vue'
@@ -61,6 +62,11 @@ const router = createRouter({
       path: "/insights",
       name: "Insights",
       component: Insights,
+    },
+    {
+      path: "/events",
+      name: "Events",
+      component: EventsPage,
     },
   ]
 })

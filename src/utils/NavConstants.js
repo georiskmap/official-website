@@ -140,7 +140,7 @@ const NavData = [
             },
             {
                 id: 2,
-                to: "/",
+                to: "/events",
                 desc: "Events",
             },
             {

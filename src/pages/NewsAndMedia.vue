@@ -3,9 +3,7 @@ import Navbar from '../components/Navbar.vue'
 import Footer from '../components/Footer.vue'
 // import Card from '../components/Cards/Card.vue'
 import "../assets/styles/App.scss"
-import { useRouter } from 'vue-router';
 
-const router = useRouter()
 
 </script>
 
@@ -74,6 +72,20 @@ const router = useRouter()
                         </div>
                         <div class="C31 mt-3  uppercase text-[#134A39]  text-[1rem] lg:text-[1.2rem] font-bold">
                             Humanitarian mapping exercise for improvement in HIV/AIDS & Gender-Based Violence (GBV) Projects in Nigeria
+                        </div>
+                        <a href="https://precisegis.com.ng/humanitarian-mapping-exercise-for-improvement-in-hiv-aids-gender-based-violence-gbv-projects-in-nigeria" target="_blank">
+                            <button class="bg-brandgreen text-white px-4 py-4 rounded-md font-bold">
+                            View Publication
+                        </button>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-6">
+                        <!-- <div class="our-team"> -->
+                        <div class="pic hover:scale-105 duration-500">
+                            <img src='/flood-risk.JPG' class="img-fluid h-[26rem] w-[26rem]" alt="Responsive image">
+                        </div>
+                        <div class="C31 mt-3  uppercase text-[#134A39]  text-[1rem] lg:text-[1.2rem] font-bold">
+                            Mapping Flood Risk for Nigeria’s Internally Displaced People
                         </div>
                         <a href="https://precisegis.com.ng/humanitarian-mapping-exercise-for-improvement-in-hiv-aids-gender-based-violence-gbv-projects-in-nigeria" target="_blank">
                             <button class="bg-brandgreen text-white px-4 py-4 rounded-md font-bold">
