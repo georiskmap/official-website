@@ -54,7 +54,7 @@ import "../assets/styles/App.scss"
                     <div class="col-lg-6 col-md-12 col-sm-6">
                         <!-- <div class="our-team"> -->
                         <div class="pic hover:scale-105 duration-500">
-                            <img src='/awareness.JPG' class="img-fluid h-[26rem] w-[26rem]" alt="Responsive image">
+                            <img src='https://upcdn.io/12a1yd9/image/awareness.JPG' class="img-fluid h-[26rem] w-[26rem]" alt="Responsive image">
                         </div>
                         <div class="C31 mt-3  uppercase text-[#134A39]  text-[1rem] lg:text-[1.2rem] font-bold">
                             Improving flood preparedness for communities in Nigeria through the provision of flood early warning maps
@@ -68,7 +68,7 @@ import "../assets/styles/App.scss"
                     <div class="col-lg-6 col-md-12 col-sm-6">
                         <!-- <div class="our-team"> -->
                         <div class="pic hover:scale-105 duration-500">
-                            <img src='/pub-2.jpg' class="img-fluid h-[26rem] w-[26rem]" alt="Responsive image">
+                            <img src='https://upcdn.io/12a1yd9/image/pub-2.jpg' class="img-fluid h-[26rem] w-[26rem]" alt="Responsive image">
                         </div>
                         <div class="C31 mt-3  uppercase text-[#134A39]  text-[1rem] lg:text-[1.2rem] font-bold">
                             Humanitarian mapping exercise for improvement in HIV/AIDS & Gender-Based Violence (GBV) Projects in Nigeria
@@ -82,7 +82,7 @@ import "../assets/styles/App.scss"
                     <div class="col-lg-6 col-md-12 col-sm-6">
                         <!-- <div class="our-team"> -->
                         <div class="pic hover:scale-105 duration-500">
-                            <img src='/flood-risk.JPG' class="img-fluid h-[26rem] w-[26rem]" alt="Responsive image">
+                            <img src='https://upcdn.io/12a1yd9/raw/flood-risk.JPG' class="img-fluid h-[26rem] w-[26rem]" alt="Responsive image">
                         </div>
                         <div class="C31 mt-3  uppercase text-[#134A39]  text-[1rem] lg:text-[1.2rem] font-bold">
                             Mapping Flood Risk for Nigeria’s Internally Displaced People
