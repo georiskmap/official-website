@@ -89,7 +89,7 @@ import "../assets/styles/App.scss"
 
 <style scoped>
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://upcdn.io/12a1yd9/image/about_us_bg.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://res.cloudinary.com/waleszn/image/upload/q_30/v1695970926/about_us_bg_tcgesm.png');
   height: 112vh;
   background-position: center;
   background-repeat: no-repeat;

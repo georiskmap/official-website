@@ -31,7 +31,7 @@
 
 <style scoped>
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://upcdn.io/12a1yd9/image/HeroImage.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png');
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
   height: 100vh;
   background-position: center;
