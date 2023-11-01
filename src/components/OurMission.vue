@@ -34,12 +34,9 @@
                             <img src='../assets/icons/our_mission3.png' class="img-fluid" alt="Responsive image">
                             <div class="M20 merri text-textgreen text-[1.2rem]" style="max-width: 354px; margin-top: 34px;">
                                 Share with
-                                Disaster
-                                and
-                                Emergency Management
-                                Institutions, Government
+                                Government
                                 Ministries, Community Leaders and Other
-                                Environmental response stakeholders</div>
+                                stakeholders</div>
                         </div>
 
                         <div  class="text-center flex justify-center items-center flex-col">
