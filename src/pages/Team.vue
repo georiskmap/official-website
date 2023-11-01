@@ -7,7 +7,7 @@ import "../assets/styles/App.scss"
 
 <template>
     <Navbar />
-    <div class="py-4 px-6 -z-0 " style="background-color: #EAF7F3;">
+    <div class="py-4 px-6 cursor-pointer" style="background-color: #EAF7F3;">
 
         <div class="demo">
             <div class=" md:px-9">
@@ -19,10 +19,10 @@ import "../assets/styles/App.scss"
                 </div>
 
                 <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
-                    <div class="col-md-3 col-sm-6">
+                    <div class="">
                         <div class="our-team">
                             <div class="pic">
-                                <img src='../assets/icons/teams1.png' alt="">
+                                <img src='https://res.cloudinary.com/waleszn/image/upload/q_30/v1695971771/teams1_tegln8.png' alt="">
                             </div>
                             <div class="font-bold cabin text-xl mt-3">
                                 Taiwo Ogunwumi
@@ -37,7 +37,7 @@ import "../assets/styles/App.scss"
                     <div class="col-md-3 col-sm-6">
                         <div class="our-team">
                             <div class="pic">
-                                <img src='../assets/icons/teams2.png' alt="">
+                                <img src='https://res.cloudinary.com/waleszn/raw/upload/v1695971835/teams2_fodjrw.png' alt="">
                             </div>
                             <div class="font-bold text-xl mt-3">
                                 Opeyemi Olatunde
@@ -51,7 +51,7 @@ import "../assets/styles/App.scss"
                     <div class="col-md-3 col-sm-6">
                         <div class="our-team">
                             <div class="pic">
-                                <img src='../assets/icons/teams3.png' alt="">
+                                <img src='https://upcdn.io/12a1yd9/raw/teams2.png' alt="">
                             </div>
                             <div class="font-bold text-xl mt-3">
                                 Opeyemi Olatunde
@@ -65,7 +65,7 @@ import "../assets/styles/App.scss"
                     <div class="col-md-3 col-sm-6">
                         <div class="our-team">
                             <div class="pic">
-                                <img src='../assets/icons/teams4.png' alt="">
+                                <img src='https://upcdn.io/12a1yd9/raw/teams3.png' alt="">
                             </div>
                             <div class="font-bold text-xl mt-3">
                                 Opeyemi Olatunde
@@ -79,7 +79,7 @@ import "../assets/styles/App.scss"
                     <div class="col-md-3 col-sm-6">
                         <div class="our-team">
                             <div class="pic">
-                                <img src='../assets/icons/teams5.png' alt="">
+                                <img src='https://upcdn.io/12a1yd9/raw/teams5.png' alt="">
                             </div>
                             <div class="font-bold text-xl mt-3">
                                 Opeyemi Olatunde
@@ -93,7 +93,7 @@ import "../assets/styles/App.scss"
                     <div class="col-md-3 col-sm-6">
                         <div class="our-team">
                             <div class="pic">
-                                <img src='../assets/icons/teams6.png' alt="">
+                                <img src='https://upcdn.io/12a1yd9/raw/teams3.png' alt="">
                             </div>
                             <div class="font-bold text-xl mt-3">
                                 Opeyemi Olatunde
@@ -104,24 +104,11 @@ import "../assets/styles/App.scss"
                         </div>
                     </div>
 
+                  
                     <div class="col-md-3 col-sm-6">
                         <div class="our-team">
                             <div class="pic">
-                                <img src='../assets/icons/teams7.png' alt="">
-                            </div>
-                            <div class="font-bold text-xl mt-3">
-                                Opeyemi Olatunde
-                            </div>
-                            <div class="M16 tracking-wide mt-2">
-                                CHIEF OPERATING OFFICER
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-6">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src='../assets/icons/teams8.png' alt="">
+                                <img src='https://res.cloudinary.com/waleszn/raw/upload/v1695972050/teams7_l7bbii.png' alt="">
                             </div>
                             <div class="font-bold text-xl mt-3">
                                 Opeyemi Olatunde
@@ -169,7 +156,7 @@ import "../assets/styles/App.scss"
     height: auto;
 }
 
-/* .images-container .item {
+/* .raws-container .item {
     width: 50%;
     height: auto;
     padding-top: 54px;
@@ -178,7 +165,7 @@ import "../assets/styles/App.scss"
     background-position: center;
 }
 
-.images-container {
+.raws-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

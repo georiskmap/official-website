@@ -1,5 +1,13 @@
 <script setup>
-
+import { ref } from "vue";
+import GetInvolvedModal from "./modals/GetInvolvedModal.vue";
+const isOpen = ref(false)
+const openModal = ()=>{
+    isOpen.value=true;
+}
+const closeModal = ()=>{
+    isOpen.value = false
+  }
 </script>
 
 <template>
@@ -20,17 +28,19 @@
                         against the trials of geohazards.
                     </p>
 
-                    <button class="btn shadow-sm merri  bg-brandgreen hover:text-brandgreen hover:bg-white  mt-8">
+                    <button @click="openModal" class="btn shadow-sm merri  bg-brandgreen hover:text-brandgreen hover:bg-white  mt-8">
                     Get Involved
                 </button>
                 </div>
              
     </div>
+    <GetInvolvedModal :isOpen="isOpen" :closeModal="closeModal" :opneModal="openModal" />
+    <!-- <get-involved-modal :isOpen="isOpen" /> -->
 </template>
 
 <style scoped>
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../assets/icons/get_involved.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://res.cloudinary.com/waleszn/image/upload/q_30/v1695971112/get_involved_o72npf.png');
     background-position: center;
     background-repeat: no-repeat;
     height: 70vh;

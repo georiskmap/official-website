@@ -1,11 +1,24 @@
-<script>
-export default {
-    methods: {
-        scrollToTop() {
-            window.scrollTo(0, 0);
-        }
-    }
+<script setup>
+
+import { ref } from "vue";
+import SubscribeNewsletterModal from "./modals/SubscribeNewsletterModal.vue";
+
+const isOpen = ref(false)
+const emailRef = ref("")
+const openModal = ()=>{
+    isOpen.value=true;
 }
+const closeModal = ()=>{
+    isOpen.value = false
+  }
+
+const scrollToTop = () =>{
+    window.scrollTo(0, 0);
+
+
+}
+console.log(emailRef.value);
+
 </script>
 
 <template>
@@ -85,10 +98,10 @@ export default {
                                     Subscribe to our Newsletter
                                 </div>
                                 <div class="input-group">
-                                    <input  type="email" class="form-control w-full p-3" placeholder="Enter your email">
+                                    <input v-model="emailRef"  type="email" class="form-control w-full p-3 text-black" placeholder="Enter your email">
                                 </div>
                                 
-                                    <button class="btn py-2 px-4" type="submit">
+                                    <button @click="openModal" class="btn hover:opacity-70 font-semibold py-2 px-4" type="submit">
                                        
                                             Subscribe
                                         
@@ -112,8 +125,9 @@ export default {
 
        
     </footer>
+    <SubscribeNewsletterModal :openModal="openModal" :emailAdd="emailRef.value" :isOpen="isOpen" :closeModal="closeModal" />
+    
 </template>
-
 <style scoped>
 .footer-container {
     background-color: #134A39;

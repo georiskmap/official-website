@@ -8,7 +8,7 @@ const showMenu = ref(false);
 </script>
 
 <template>
-  <nav class="h-28 bg-brandgray/50 text-white">
+  <nav class=" lg:h-28 bg-brandgray/50 text-white">
 <div class="flex mx-auto w-[95%] md:w-[90%] items-center justify-between py-4 ">
   
 <div class="flex   ">
@@ -39,33 +39,5 @@ const showMenu = ref(false);
 </template>
 
 <style scoped>
-/* .navbar {
-  padding: 28px 120px 28px 120px;
-}
 
-.navbar-nav a {
-  color: #9EDBC8;
-  display: block;
-  margin-top: 16px;
-}
-
-.navbar-nav a:hover {
-  color: #2DB187;
-}
-
-.nav-dropdown-heading {
-  margin-bottom: 32px;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-
-@media (max-width: 767px) {
-  .navbar {
-    padding: 40px 0px 40px 0px;
-  }
-} */
 </style>

@@ -32,7 +32,7 @@ import "../assets/styles/App.scss"
       <div class=" mt-n8 mt-lg-n13 z-2">
         <div class="row justify-content-center">
           <div class="">
-            <div class="border-light p-20 " style="background-color: #FFFFFF;">
+            <div class="border-light p-12 lg:p-20 " style="background-color: #FFFFFF;">
               <div class="text-[2rem] cabin font-semibold heading">
                 WHO ARE WE?
               </div>
@@ -89,7 +89,7 @@ import "../assets/styles/App.scss"
 
 <style scoped>
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../assets/icons/about_us_bg.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://res.cloudinary.com/waleszn/image/upload/q_30/v1695970926/about_us_bg_tcgesm.png');
   height: 112vh;
   background-position: center;
   background-repeat: no-repeat;
