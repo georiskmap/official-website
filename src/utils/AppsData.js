@@ -81,14 +81,14 @@ const AppsData = [
          placeholder: "https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png",
         map_url: 'https://res.cloudinary.com/waleszn/image/upload/v1698224014/Bama_Floodmap_17_3_2021_batkcm.jpg'
     },
-    {
-        id: 5543788732,
-        state: 'Borno',
-        lga:'Ngala',
-        country: 'Nigeria',
-         placeholder: "https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png",
-        map_url: 'https://upcdn.io/12a1yd9/image/flood-ngala.png'
-    },
+    // {
+    //     id: 5543788732,
+    //     state: 'Borno',
+    //     lga:'Ngala',
+    //     country: 'Nigeria',
+    //      placeholder: "https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png",
+    //     map_url: 'https://upcdn.io/12a1yd9/image/flood-ngala.png'
+    // },
     {
         id: 64746577,
         state: 'Borno',

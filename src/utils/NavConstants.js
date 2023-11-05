@@ -8,11 +8,11 @@ const NavData = [
                 to: "/about",
                 desc: "About GRMI",
             },
-            {
-                id: 2,
-                to: "/team",
-                desc: "Team",
-            },
+            // {
+            //     id: 2,
+            //     to: "/team",
+            //     desc: "Team",
+            // },
             {
                 id: 3,
                 to: "/news-and-media",
@@ -27,34 +27,34 @@ const NavData = [
 
         ] 
     },
-    {
-        id: 2,
-        name: "Services",
-        links: [
-            {
-                id: 1,
-                to: "/",
-                desc: "Software",
-            },
-            {
-                id: 2,
-                to: "/",
-                desc: "Consultancy",
-            },
-            {
-                id: 3,
-                to: "/",
-                desc: "Research and Development",
+    // {
+    //     id: 2,
+    //     name: "Services",
+    //     links: [
+    //         {
+    //             id: 1,
+    //             to: "/",
+    //             desc: "Software",
+    //         },
+    //         {
+    //             id: 2,
+    //             to: "/",
+    //             desc: "Consultancy",
+    //         },
+    //         {
+    //             id: 3,
+    //             to: "/",
+    //             desc: "Research and Development",
 
-            },
-            {
-                id: 4,
-                to: "/",
-                desc: "Data Collection/Intelligence",
-            }
+    //         },
+    //         {
+    //             id: 4,
+    //             to: "/",
+    //             desc: "Data Collection/Intelligence",
+    //         }
 
-        ] 
-    },
+    //     ] 
+    // },
     {
         id: 3,
         name: "Projects",
@@ -100,35 +100,35 @@ const NavData = [
 
         ] 
     },
-    {
-        id: 5,
-        name: "Partners",
-        links: [
-            {
-                id: 1,
-                to: "/",
-                desc: "Commercial Partners",
-            },
-            {
-                id: 2,
-                to: "/",
-                desc: "Research Partners",
-            },
-            {
-                id: 3,
-                to: "/",
-                desc: "Local Partners",
-            },
-            {
-                id: 4,
-                to: "/",
-                desc: "Regions: NG, GH",
-            },
+    // {
+    //     id: 5,
+    //     name: "Partners",
+    //     links: [
+    //         {
+    //             id: 1,
+    //             to: "/",
+    //             desc: "Commercial Partners",
+    //         },
+    //         {
+    //             id: 2,
+    //             to: "/",
+    //             desc: "Research Partners",
+    //         },
+    //         {
+    //             id: 3,
+    //             to: "/",
+    //             desc: "Local Partners",
+    //         },
+    //         {
+    //             id: 4,
+    //             to: "/",
+    //             desc: "Regions: NG, GH",
+    //         },
            
            
 
-        ] 
-    },
+    //     ] 
+    // },
     {
         id: 6,
         name: "Knowledge",

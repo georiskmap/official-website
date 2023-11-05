@@ -53,11 +53,11 @@ console.log(emailRef.value);
                     About GRMI
                 </router-link>
 
-                <router-link class="M16  white links" @click="scrollToTop" to="/team" style="margin-bottom: 12px;">
+                <!-- <router-link class="M16  white links" @click="scrollToTop" to="/team" style="margin-bottom: 12px;">
                     <span>
                         Team
                     </span>
-                </router-link>
+                </router-link> -->
 
                 <router-link class="M16 white links text-nowrap" @click="scrollToTop" to="/news-and-media"
                     style="margin-bottom: 12px;">
