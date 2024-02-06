@@ -15,6 +15,16 @@ export default {
         primary500: '#2DB187'
 
         
+      },
+      gridTemplateColumns: {
+        'temp': '2.5fr 2fr',
+        'temp2': 'repeat(auto-fit, minmax(300px, 1fr))'
+      },
+      screens: {
+        'tab': {'max': '900px'},
+        'tab2': {'max': '1200px'},
+        'mob': {'max': '600px'},
+        'desk': {'min': '900px'},
       }
     },
   },

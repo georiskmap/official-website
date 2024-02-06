@@ -13,17 +13,17 @@ const NavData = [
             //     to: "/team",
             //     desc: "Team",
             // },
-            {
-                id: 3,
-                to: "/news-and-media",
-                desc: "News and Media",
+            // {
+            //     id: 3,
+            //     to: "/news-and-media",
+            //     desc: "News and Media",
 
-            },
-            {
-                id: 4,
-                to: "/career",
-                desc: "Career",
-            }
+            // },
+            // {
+            //     id: 4,
+            //     to: "/career",
+            //     desc: "Career",
+            // }
 
         ] 
     },
@@ -64,17 +64,17 @@ const NavData = [
                 to: "/completed-projects",
                 desc: "Completed",
             },
-            {
-                id: 2,
-                to: "/proposed-projects",
-                desc: "Proposed",
-            },
-            {
-                id: 3,
-                to: "/ongoing-projects",
-                desc: "Ongoing",
+            // {
+            //     id: 2,
+            //     to: "/proposed-projects",
+            //     desc: "Proposed",
+            // },
+            // {
+            //     id: 3,
+            //     to: "/ongoing-projects",
+            //     desc: "Ongoing",
 
-            },
+            // },
           
 
         ] 
@@ -92,7 +92,7 @@ const NavData = [
             },
             {
                 id: 2,
-                to: "/",
+                to: "/dashboard",
                 desc: "Dashboard",
             },
            

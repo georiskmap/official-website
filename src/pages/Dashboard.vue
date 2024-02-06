@@ -10,12 +10,12 @@ import "../assets/styles/App.scss"
     <div class="py-4 px-6 -z-0 " style="background-color: #353535;">
 
         <div class="demo">
-            <div class=" md:px-9">
+            <div class="">
                 <div class="row text-center">
-                    <div class="C49 text-white text-[3.08rem] font-semibold text-center">
+                    <!-- <div class="C49 text-white text-[3.08rem] font-semibold text-center">
                         Dashboard
-                    </div>
-                    <!-- <h1 class="heading-title"> Our Team Style </h1> -->
+                    </div> -->
+                    <iframe src="https://www.arcgis.com/apps/dashboards/ed0c475906484b50b2e6afbccabb6fa7" frameborder="0" class="w-full min-h-screen my-4" ></iframe>
                 </div>
 
               

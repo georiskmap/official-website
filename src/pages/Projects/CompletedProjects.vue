@@ -51,10 +51,10 @@ function openModal() {
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" >
+            <div class="grid grid-cols-1 md:grid-cols-temp2  gap-[1.2rem]" >
                 <div v-for="slide in AppsData" :key="slide.id">
       <div  class="connection-card">
-        <div class="card m-3 text-white h-[450px] w-[300px] md:w-[350px] rounded-lg flex items-end" :style="{'background-image':`url(${slide.placeholder})`,
+        <div class="card text-white h-[300px] w-full rounded-lg flex items-end" :style="{'background-image':`url(${slide.placeholder})`,
         'background-size': 'cover', 'background-repeat': 'no-repeat','background-position': 'center'}">
 
           <div class="flex flex-col p-3 w-full">
@@ -69,7 +69,7 @@ function openModal() {
               </div>
 
               <button @click="showIframe(slide)"
-                class="w-full hover:bg-brandgreen hover:text-white bg-[#FFF] font-semibold text-[1.1rem] rounded-md text-tertiary py-4 px-5 min-w-[100px]">
+                class="w-full hover:bg-brandgreen hover:text-white bg-[#FFF] font-semibold text-[1.1rem] rounded-md text-tertiary py-4 px-5 min-w-[100px] transition">
                 View Maps
               </button>
 
@@ -91,7 +91,5 @@ function openModal() {
 
 
 <style scoped>
-.custom-card {
-    margin-bottom: 24px;
-}
+
 </style>

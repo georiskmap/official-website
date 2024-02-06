@@ -16,9 +16,9 @@
               generating applications, and <br />
               dissemination of Geohazard maps using advanced Geospatial Technology</p>
             <div class="flex gap-4 flex-col md:flex-row">
-            <button class="px-10 py-4 text-lg bg-brandgreen">View Water Level</button>
+            <button class="px-10 py-4 text-lg bg-brandgreen transition rounded-[0.5rem]">View Water Level</button>
           <router-link to="/dashboard">
-            <button class="px-10 py-4 text-lg border-[#EAF7F3] border bg-none">View Dashboard</button>
+            <button class="px-10 py-4 text-lg border-[#EAF7F3] border bg-none transition rounded-[0.5rem]">View Dashboard</button>
           </router-link>
 
       
