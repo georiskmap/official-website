@@ -27,3 +27,9 @@ body {
 .cabin{
   font-family: 'Cabin', sans-serif;
 }
+
+@layer components {
+  .transition {
+    @apply transition-all ease-linear duration-100;
+  }
+}
