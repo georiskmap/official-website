@@ -1,0 +1,14 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    object-fit: fill;
+}
+
+.animate_animated.animate_fadeIn {
+    --animate-duration: 4s;
+}

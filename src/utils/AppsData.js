@@ -5,7 +5,7 @@ const AppsData = [
         lga: 'Ibeju Lekki',
         country: 'Nigeria',
         map_url: 'https://res.cloudinary.com/waleszn/image/upload/v1698223720/Ibeju_Ikeji_Floodmap_26_2_2021_vcbnn3.jpg',
-        placeholder: "https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png",
+        placeholder: "lekki1.png",
     },
     {
         id: 552349843,
@@ -13,16 +13,16 @@ const AppsData = [
         lga: 'Ikorodu',
         country: 'Nigeria',
         map_url: 'https://upcdn.io/12a1yd9/image/flood-ikorodu.png',
-        placeholder: "https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png",
+        placeholder: "ikorodu1.png",
 
     },
     {
         id: 5523443,
-        state: 'Benue',
+        state: 'Edo',
         lga: 'Etsako',
         country: 'Nigeria',
         map_url: 'https://res.cloudinary.com/waleszn/image/upload/v1698223968/Etsako_Floodmap_15_3_2021_zo2kt7.jpg',
-        placeholder: "https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png",
+        placeholder: "etsako.png",
 
     },
     {
@@ -30,7 +30,7 @@ const AppsData = [
         state: 'Benue',
         lga: 'Logo',
         country: 'Nigeria',
-         placeholder: "https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png",
+         placeholder: "logoBenue.png",
         map_url: 'https://res.cloudinary.com/waleszn/image/upload/v1698223713/Logo_LGA_Floodmap_26_02_2021_bjgzh4.jpg'
     },
     {
@@ -38,7 +38,7 @@ const AppsData = [
         state: 'State',
         lga: 'Lagos',
         country: 'Nigeria',
-         placeholder: "https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png",
+         placeholder: "lagos1.png",
         map_url: 'https://res.cloudinary.com/waleszn/image/upload/v1698223709/LagosPrediction_ljlfvh.png'
     },
     {
@@ -46,7 +46,7 @@ const AppsData = [
         state: 'Borno',
         lga: 'Monguno',
         country: 'Nigeria',
-         placeholder: "https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png",
+         placeholder: "monguno1.png",
         map_url: 'https://res.cloudinary.com/waleszn/image/upload/v1698223711/Monguno_Floodmap_10_3_2021_xtig67.jpg'
     },
     {
@@ -54,7 +54,7 @@ const AppsData = [
         state: 'Adamawa',
         lga: 'Girei',
         country: 'Nigeria',
-         placeholder: "https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png",
+         placeholder: "girei.png",
         map_url: 'https://res.cloudinary.com/waleszn/image/upload/v1698223883/Girei_Floodmap_2_03_2021_h3i9g5.jpg'
     },
     {
@@ -62,7 +62,7 @@ const AppsData = [
         state: 'Borno',
         lga:'Damboa',
         country: 'Nigeria',
-        placeholder: "https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png",
+        placeholder: "damboa.png",
         map_url: 'https://res.cloudinary.com/waleszn/image/upload/v1698224013/Damboa_Floodmap_13_3_2021_pfz26p.jpg'
     },
     {
@@ -70,15 +70,15 @@ const AppsData = [
         state: 'Lagos',
         lga:'Amuwo Odofin',
         country: 'Nigeria',
-        placeholder: "https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png",
+        placeholder: "amuwo.png",
         map_url: 'https://res.cloudinary.com/waleszn/image/upload/v1698224058/Amuwo_Odofin_Floodmap_26_2_2021_l2b9ip.jpg'
     },
     {
         id: 534454,
-        state: 'Lagos',
+        state: 'Borno',
         lga:'Bama',
         country: 'Nigeria',
-         placeholder: "https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png",
+         placeholder: "bama.png",
         map_url: 'https://res.cloudinary.com/waleszn/image/upload/v1698224014/Bama_Floodmap_17_3_2021_batkcm.jpg'
     },
     // {
@@ -94,7 +94,7 @@ const AppsData = [
         state: 'Borno',
         lga:'Maiduguri',
         country: 'Nigeria',
-         placeholder: "https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png",
+         placeholder: "maiduguri.png",
         map_url: 'https://res.cloudinary.com/waleszn/image/upload/v1698223715/Maiduguri_Flood_map_3_7_2021_pvpfp2.jpg'
     },
     {
@@ -102,7 +102,7 @@ const AppsData = [
         state: 'Adamawa',
         lga:'Fufore',
         country: 'Nigeria',
-         placeholder: "https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png",
+         placeholder: "fufore.png",
         map_url: 'https://res.cloudinary.com/waleszn/image/upload/v1698223795/Fufore_Floodmap_2_03_2021_oe5apv.jpg'
     },
     {
@@ -110,7 +110,7 @@ const AppsData = [
         state: 'Kebbi',
         lga:'Birnin-Kebbi',
         country: 'Nigeria',
-         placeholder: "https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png",
+         placeholder: "birnin-kebbi.png",
         map_url: 'https://res.cloudinary.com/waleszn/image/upload/v1698224012/Birnin_kebbi_Floodmap_17_3_2021_bwsfek.jpg'
     },
 

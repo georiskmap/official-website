@@ -8,9 +8,9 @@
                     <div class="text-tertiary font-semibold text-[1.5rem] md:text-[2.4rem] cabin text-center mb-8">OUR MISSION</div>
                 </div>
                 
-                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
-                    <div  class="text-center flex justify-center items-center flex-col">
-                            <img src='../assets/icons/our_mission1.png' class="img-fluid" alt="Responsive image">
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start gap-6">
+                    <div  class="text-center flex items-center justify-center flex-col">
+                            <img src='../assets/icons/our_mission1.png' class="img-fluid w-[6rem] self-center" alt="Responsive image">
                             <div class="text-textgreen merri text-[1.2rem]" style="max-width: 354px; margin-top: 34px;">
                                 Identify
                                 locations
@@ -22,7 +22,7 @@
                         </div>
 
                         <div class="text-center flex justify-center items-center flex-col">
-                            <img src='../assets/icons/our_mission2.png' class="img-fluid" alt="Responsive image">
+                            <img src='../assets/icons/our_mission2.png' class="img-fluid w-[6rem] self-center" alt="Responsive image">
                             <div class="M20 merri text-textgreen text-[1.2rem]" style="max-width: 354px; margin-top: 34px;">
                                 Produce Hazard
                                 susceptibility
@@ -31,7 +31,7 @@
                         </div>
 
                     <div  class="text-center flex justify-center items-center flex-col">
-                            <img src='../assets/icons/our_mission3.png' class="img-fluid" alt="Responsive image">
+                            <img src='../assets/icons/our_mission3.png' class="img-fluid w-[6rem] self-center" alt="Responsive image">
                             <div class="M20 merri text-textgreen text-[1.2rem]" style="max-width: 354px; margin-top: 34px;">
                                 Share with
                                 Disaster
@@ -43,7 +43,7 @@
                         </div>
 
                         <div  class="text-center flex justify-center items-center flex-col">
-                            <img src='../assets/icons/our_mission4.png' class="img-fluid" alt="Responsive image">
+                            <img src='../assets/icons/our_mission4.png' class="img-fluid w-[6rem] self-center" alt="Responsive image">
                             <div class="M20 merri text-textgreen text-[1.2rem]" style="max-width: 354px; margin-top: 34px;">
                                 Use of maps for
                                 efficient

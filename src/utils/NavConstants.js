@@ -13,17 +13,17 @@ const NavData = [
             //     to: "/team",
             //     desc: "Team",
             // },
-            {
-                id: 3,
-                to: "/news-and-media",
-                desc: "News and Media",
+            // {
+            //     id: 3,
+            //     to: "/news-and-media",
+            //     desc: "News and Media",
 
-            },
-            {
-                id: 4,
-                to: "/career",
-                desc: "Career",
-            }
+            // },
+            // {
+            //     id: 4,
+            //     to: "/career",
+            //     desc: "Career",
+            // }
 
         ] 
     },
@@ -62,19 +62,24 @@ const NavData = [
             {
                 id: 1,
                 to: "/completed-projects",
-                desc: "Completed",
+                desc: "Cartographic Map",
             },
             {
-                id: 2,
-                to: "/proposed-projects",
-                desc: "Proposed",
+                id: 1,
+                to: "/floodEvent",
+                desc: "Webmap & StoryMap",
             },
-            {
-                id: 3,
-                to: "/ongoing-projects",
-                desc: "Ongoing",
+            // {
+            //     id: 2,
+            //     to: "/proposed-projects",
+            //     desc: "Proposed",
+            // },
+            // {
+            //     id: 3,
+            //     to: "/ongoing-projects",
+            //     desc: "Ongoing",
 
-            },
+            // },
           
 
         ] 
@@ -86,14 +91,9 @@ const NavData = [
         name: "Data",
         links: [
             {
-                id: 1,
-                to: "/",
-                desc: "Portal",
-            },
-            {
                 id: 2,
-                to: "/",
-                desc: "Dashboard",
+                to: "/dashboard",
+                desc: "Past Flood Events",
             },
            
            
@@ -136,7 +136,7 @@ const NavData = [
             {
                 id: 1,
                 to: "/insights",
-                desc: "Insights",
+                desc: "News and Media",
             },
             {
                 id: 2,
@@ -145,14 +145,20 @@ const NavData = [
             },
             {
                 id: 3,
-                to: "/",
+                to: "/research",
                 desc: "Research Papers",
             },
             {
-                id: 4,
-                to: "/",
-                desc: "Regions: NG, GH",
+                id: 3,
+                to: "/awards",
+                desc: "Awards & Recognitions",
             },
+            {
+                id: 3,
+                to: "/reports",
+                desc: "Annual Reports",
+            },
+            
            
            
 

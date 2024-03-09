@@ -1,34 +1,6 @@
 <template>
-  <TransitionRoot appear :show="props.isOpen" as="template">
-    <Dialog as="div" @close="props.closeModal" class="relative z-10 ">
-      <TransitionChild
-        as="template"
-        enter="duration-300 ease-out"
-        enter-from="opacity-0"
-        enter-to="opacity-100"
-        leave="duration-200 ease-in"
-        leave-from="opacity-100"
-        leave-to="opacity-0"
-      >
-        <div class="fixed inset-0 bg-black bg-opacity-10" />
-      </TransitionChild>
-
-      <div class="fixed inset-0 overflow-y-auto">
-        <div
-          class="flex min-h-full items-center justify-center p-4 text-center"
-        >
-          <TransitionChild
-            as="template"
-            enter="duration-300 ease-out"
-            enter-from="opacity-0 scale-95"
-            enter-to="opacity-100 scale-100"
-            leave="duration-200 ease-in"
-            leave-from="opacity-100 scale-100"
-            leave-to="opacity-0 scale-95"
-          >
-            <DialogPanel
-              class="w-full  max-w-[700px] transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all"
-            >
+  <form class=" bg-white w-[90%] mx-auto absolute top-[20%] left-[50%] translate-x-[-50%] h-[90%] rounded-[0.5rem]">
+        <div class="flex flex-col min-h-full items-center justify-center p-4 text-center">
             
             <div class="flex w-full flex-col space-y-4">
               <h3 class="font-semibold text-sm">
@@ -36,51 +8,68 @@
               </h3>
 
               <div class="flex flex-col space-y-3">
-                <input type="text" class="border border-brandgreen w-full p-3 rounded-md" placeholder="Enter your name">
-                <input type="text" class="border border-brandgreen w-full p-3 rounded-md" placeholder="What do you do?">
-                <textarea placeholder="Enter your message here" class="border border-brandgreen w-full p-3 rounded-md" rows="5" />
+                <input type="text" class="border border-brandgreen w-full p-3 rounded-md" placeholder="Enter your name" v-model="name">
+                <input type="email" class="border border-brandgreen w-full p-3 rounded-md" placeholder="Enter Your Email" v-model="mail">
+                <input type="text" class="border border-brandgreen w-full p-3 rounded-md" placeholder="What do you do?" v-model="occupation">
+                <textarea placeholder="Enter your message here" class="border border-brandgreen w-full p-3 rounded-md" rows="5"  v-model="message"/>
 
               </div>
             </div>
 
               <div class="mt-4 flex gap-4">
-                <button
+                <a
                   type="button"
                   class="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                   @click="closeModal"
                 >
                   Close
-                </button>
+                </a>
 
                 <button
                   type="button"
                   class="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                  @click="closeModal"
+                  @click="sendMail"
                 >
                   Submit
                 </button>
               </div>
-            </DialogPanel>
-          </TransitionChild>
-        </div>
       </div>
-    </Dialog>
-  </TransitionRoot>
+  </form>
 </template>
-  <script setup>
-    import { ref } from 'vue'
-    import {
-      TransitionRoot,
-    TransitionChild,
-    Dialog,
-    DialogPanel,
-    DialogTitle,
-    } from '@headlessui/vue'
-    const props = defineProps({
-    isOpen: Boolean,
-    closeModal: Function,
-    openModal: Function,
+<script setup>
+import emailjs from 'emailjs-com'
+import { ref } from 'vue'
+import {
+  TransitionRoot,
+TransitionChild,
+Dialog,
+DialogPanel,
+DialogTitle,
+} from '@headlessui/vue'
+const props = defineProps({
+isOpen: Boolean,
+closeModal: Function,
+openModal: Function,
 
-  })
-  
-  </script>
+})
+
+  const message = ref('')
+  const name = ref('')
+  const occupation = ref('')
+  const mail = ref('')
+
+  function sendMail(e){
+    try {
+      emailjs.sendForm('service_8r4m70n', 'template_f7qkatb', '#myForm',  {
+        name: name.value,
+        message: message.value,
+        'to_name': 'Abdultawab',
+        'reply_to': mail.value
+
+      })
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+</script>

@@ -1,59 +1,29 @@
 
 
 <template>
-  <div class="flex flex-col items-center justify-center">
-    <div class="text-brandgreen cabin mb-4 md:mb-[65px] font-semibold text-[2.2rem] flex justify-content-center" style="padding-top: 14px;">
-      Partners
+  <section class="px-[7rem] py-[2rem] mob:p-6 grid grid-cols-temp3 items-center gap-[2.75rem] tab:grid-cols-1 tab:text-center mob:gap-[1.75rem]">
+    <div>
+      <h3 class="font-cabin text-[3rem] text-textgreen tab:text-[1.5rem] tab2:text-[2rem] font-bold">Global Appearances</h3>
     </div>
-<AutoPlayCarousel />
-    
-
-    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" style="margin-bottom: 54px;">
-      <div class="carousel-inner flex">
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col">
-              <img src='../assets/icons/partner1.png' class="img-fluid" alt="Responsive image">
-            </div>
-            <div class="col">
-              <img src="../assets/icons/partner2.png" class="img-fluid" alt="Responsive image">
-            </div>
-            <div class="col d-flex align-items-center">
-              <img src="../assets/icons/partner3.png" class="img-fluid" alt="Responsive image">
-            </div>
-            <div class="col">
-              <img src="../assets/icons/partner4.png" class="img-fluid" alt="Responsive image">
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col">
-              <img src='../assets/icons/partner1.png' class="img-fluid" alt="Responsive image">
-            </div>
-            <div class="col">
-              <img src="../assets/icons/partner2.png" class="img-fluid" alt="Responsive image">
-            </div>
-            <div class="col d-flex align-items-center">
-              <img src="../assets/icons/partner3.png" class="img-fluid" alt="Responsive image">
-            </div>
-            <div class="col">
-              <img src="../assets/icons/partner4.png" class="img-fluid" alt="Responsive image">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-  </div>
+    <div class="flex flex-col">
+      <article class="grid grid-cols-3 place-items-center gap-[2rem]">
+        <img src="../assets/icons/undark.jfif" class=" w-[10rem] justify-self-center" alt="">
+        <img src="../assets/icons/businessday.png" class="" alt="">
+        <img src="../assets/icons/logo5.jpeg" class="" alt="">
+        <!-- <img src="../assets/icons/blue.png" class="" alt=""> -->
+      </article>
+      <article class="grid grid-cols-4 place-items-center gap-[2rem]">
+        <img src="../assets/icons/icir.png" class="w-[16rem]" alt="">
+        <img src="../assets/icons/esri.png" class="w-[5rem]" alt="">
+        <img src="../assets/icons/hot.png" class="" alt="">
+        <img src="../assets/icons/fair.png" class="" alt="">
+        <!-- <img src="../assets/icons/mark.png" class="" alt=""> -->
+      </article>
+    </div>
+  </section>
 </template>
 <script >
-import AutoPlayCarousel from './carousel/AutoPlayCarousel.vue';
-import Carousel from './carousel/Carousel.vue';
-import {defineComponent} from 'vue'
-
-export default defineComponent({
-  components: { AutoPlayCarousel }
-})
+  
 </script>
 
 <style scoped></style>

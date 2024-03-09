@@ -1,8 +1,7 @@
 <script setup>
-import Navbar from '../components/Navbar.vue'
-import Footer from '../components/Footer.vue'
-import "../assets/styles/App.scss"
-
+  import Navbar from '../components/Navbar.vue'
+  import Footer from '../components/Footer.vue'
+  import "../assets/styles/App.scss"
 </script>
 
 <template>
@@ -14,7 +13,7 @@ import "../assets/styles/App.scss"
         <div class="row">
           <div class="hero-container w-100">
             <div class="hero-text  text-center  w-100">
-              <div class="C61 white text-[3.8125rem] cabin">About GRMI</div>
+              <div class="white text-[3.8125rem]">About GRMI</div>
             </div>
             <div>
               <CustomButton btn-text="Click me" type="success" size="lg" />
@@ -28,17 +27,17 @@ import "../assets/styles/App.scss"
     </div>
 
 
-    <div class="section section-lg pt-0">
-      <div class=" mt-n8 mt-lg-n13 z-2">
+    <div class="section section-lg pt-0 relative w-[90%] mx-auto mt-[-20rem]">
+      <div class=" mt-n8 mt-lg-n13">
         <div class="row justify-content-center">
           <div class="">
-            <div class="border-light p-12 lg:p-20 " style="background-color: #FFFFFF;">
+            <div class="border-light p-12 lg:p-20 mob:p-6" style="background-color: #FFFFFF;">
               <div class="text-[2rem] cabin font-semibold heading">
                 WHO ARE WE?
               </div>
               <div class="card-body">
                 <div class="">
-                  <div class="flex mt-5 lg:flex-row flex-col  justify-between gap-8 ">
+                  <div class=" grid lg:grid-cols-temp grid-cols-1 mt-5 justify-between gap-8 ">
                     <div class="text-justify flex space-y-4 flex-col leading-12 text-container">
                     <p class="leading-[1.5rem]">
                       In harmonious progression with the principles of Sustainable Development Goals 11 (Sustainable Cities and Communities) and 13 (Climate Action), we are embarking on a pioneering endeavor that aligns with the core objectives of the Sendai Framework for Disaster Risk Reduction. Our goal is to amplify the availability and accessibility of multi-hazard early warning systems, alongside comprehensive disaster risk information and assessments by the year 2030.
@@ -60,13 +59,34 @@ import "../assets/styles/App.scss"
                       ● Ensuring these early warning signal maps are accessible to the broader public, forming a nexus of information that benefits emergency institutions and stakeholders alike, fostering a community united in resilience and preparedness.
                     </p>
                   </div>
-                  <div class="col-12 col-md-6 text-center" >
-                    <iframe class="w-[200px] h-[200px] md:w-[350px] md:h-[380px] lg:w-[450px] lg:h-[480px]" 
+                  <div class="h-full" >
+                    <iframe class="w-full h-[200px] md:w-full md:h-[380px] lg:w-full lg:h-[700px]" 
                       src="https://www.youtube.com/embed/sAx462Sc004?si=uClXD1ueAA_bv1tz&amp;start=1" 
                       title="YouTube video player" frameborder="0" 
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                       allowfullscreen>
                     </iframe>
+                    <article id="profile">
+                      <h3 class="font-cabin text-brandgreen font-bold text-[1.9rem] leading-none mt-[1rem]"> Taiwo Ogunwumi</h3>
+                      <p class="font-merri text-primary500 text-[1.25rem] leading-none mt-[0.5rem]">Founder</p>
+                      <div class="flex gap-4 mt-[0.5rem]">
+                      <div>
+                          <a href="https://twitter.com/T_Ogunwumi">
+                              <img src='../assets/icons/userTwitter.png' alt="GRMI Twitter">
+                          </a>
+                      </div>
+                      <div>
+                          <a href="https://www.linkedin.com/in/taiwo-ogunwumi/">
+                              <img src='../assets/icons/userLinkedin.png' alt="GRMI linkedin">
+                          </a>
+                      </div>
+                      <div>
+                          <a href="mailto: taiwoogunwumi@yahoo.com" target="_blank">
+                              <img src='../assets/icons/userMail.png' alt="GRMI MAIL">
+                          </a>
+                      </div>
+                  </div>
+                    </article>
                   </div>
                   </div>
                   <div class="images-container ">
@@ -99,15 +119,15 @@ import "../assets/styles/App.scss"
 .hero-container {
   height: 100vh;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   text-align: center;
 }
 
 .hero-text {
- 
   color: white;
+  margin-top: 6rem;
 }
 
 .who-are-we-bg-container {
@@ -125,26 +145,23 @@ import "../assets/styles/App.scss"
 
 
 .images-container .item {
-  width: 25%;
+  width: auto;
   height: auto;
   padding-top: 54px;
   display: inline-block;
   background-size: cover;
   background-position: center;
+  border-radius: 0.5rem;
 }
 
 .images-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: center;
   flex-wrap: wrap;
-
+  gap: 0.5rem;
   resize: both;
   overflow: auto;
-}
-
-.banner {
-  padding-left: 120px;
-  margin: 0 120px;
 }
 
 
@@ -157,34 +174,5 @@ import "../assets/styles/App.scss"
   padding: 37px 0;
 }
 
-@media (min-width: 992px) {
 
-  .mt-lg-n13,
-  .my-lg-n13 {
-    margin-top: -26rem !important;
-  }
-
-  .text-container {
-    padding: 0 12px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1488px;
-  }
-
-  .section {
-    margin: 0 120px;
-  }
-}
-
-
-@media (max-width: 1000px) {
-  .banner {
-    padding-left: 60px;
-    margin: 0;
-  }
-
-}
 </style>

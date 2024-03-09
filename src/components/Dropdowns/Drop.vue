@@ -6,14 +6,10 @@ const props = defineProps({
   model: Object
 })
 
-
-
-
-
 </script>
 
 <template>
-    <div class=" text-right w-32">
+    <div class="">
       <Menu as="div" class="relative inline-block text-left">
         <div>
           <MenuButton
@@ -22,13 +18,13 @@ const props = defineProps({
           >
           <div
           :class="[
-              open ? 'inline-flex hover:text-primary500 w-full justify-center rounded-md   px-4 py-2 text-md font-medium text-primary500 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75' : 'inline-flex w-full justify-center rounded-md   px-4 py-2 text-md font-medium text-white hover:text-primary500 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'
+              open ? 'inline-flex hover:text-primary500 w-full justify-center rounded-md   px-4 py-2 text-md font-medium text-primary500 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 transition' : 'inline-flex w-full justify-center rounded-md   px-4 py-2 text-md font-medium text-white hover:text-primary500 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 transition'
             ]"
           >
           {{ props.model.name }}
          
            <img src="../../assets/icons/arrow-down.png" :class="[
-            open ? 'img-fluid bi-arrow-down arrow-default rotate-180' : 'img-fluid bi-arrow-down arrow-default'
+            open ? 'img-fluid bi-arrow-down arrow-default rotate-180 transition' : 'img-fluid bi-arrow-down arrow-default transition'
            ]"
                alt="Responsive image">
 
@@ -46,7 +42,7 @@ const props = defineProps({
         >
           <MenuItems
           
-            class="absolute merri right-0 mt-2 w-fit origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+            class="absolute merri right-0 mt-2 w-56 p-4 min-w-70 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-[999]"
           >
           <div v-for="link in props.model.links" :key="link.id" class="px-1 py-1">
              
@@ -56,8 +52,8 @@ const props = defineProps({
             
                <button
                  :class="[
-                   active ? 'text-[1rem] w-fit hover:text-black opacity-100 font-normal text-primary500' : 'hover:text-black opacity-80 font-normal text-primary500 text-[1rem]',
-                   'group flex w-fit text-[12px] items-center rounded-md px-2 py-2 text-start',
+                   active ? 'text-[1rem] w-fit hover:text-black opacity-100 font-normal text-primary500' : 'hover:text-black opacity-80 font-normal text-primary500 text-[1rem] transition',
+                   'group flex w-fit text-[12px] items-center rounded-md px-2 py-2 text-start transition',
                  ]"
                >
                

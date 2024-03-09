@@ -32,7 +32,7 @@
 } */
 
 .container-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://res.cloudinary.com/waleszn/image/upload/v1695972251/what_we_do_wq5rjs.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../assets/icons/bg3.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
