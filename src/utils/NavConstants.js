@@ -62,12 +62,15 @@ const NavData = [
             {
                 id: 1,
                 to: "/completed-projects",
+
                 desc: "Cartographic Map",
             },
             {
                 id: 1,
                 to: "/floodEvent",
                 desc: "Webmap & StoryMap",
+                desc: "Completed",
+
             },
             // {
             //     id: 2,
@@ -159,11 +162,12 @@ const NavData = [
                 desc: "Annual Reports",
             },
             
+
            
            
 
-        ] 
-    },
+    //     ] 
+    // },
 ]
 
 export default NavData

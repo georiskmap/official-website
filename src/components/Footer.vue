@@ -63,13 +63,14 @@ console.log(emailRef.value);
                         Team
                     </span>
                 </router-link> -->
-
-                <router-link class="M16 white links text-nowrap" @click="scrollToTop" to="/insights"
+                
+                  <router-link class="M16 white links" @click="scrollToTop" to="/insights"
                     style="margin-bottom: 12px;">
                     <span>
-                        News and Media
+                       News and Media
                     </span>
                 </router-link>
+
 
                 <router-link class="M16 white links" @click="scrollToTop" to="/completed-projects"
                     style="margin-bottom: 12px;">
