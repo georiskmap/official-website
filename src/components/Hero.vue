@@ -1,7 +1,4 @@
 <script setup>
-
-
-
 </script>
 
 <template>
@@ -9,29 +6,28 @@
     <div class="hero-text h-full flex flex-col w-full justify-center items-center ">
             <h1 class="text-[2.2rem] md:text-[2.45rem] text-center cabin  lg:text-[3.831rem]  font-semibold">GeoHazards; Predict, Prepare, and Protect.</h1>
 
-            <p class="M20 white text-[0.8rem] md:text-[1.4rem] merri leading-[2rem] text-center" style="margin-bottom: 16px;">Promoting a sustainable environment
-              through
-              the
-              development,
-              generating applications, and <br />
-              dissemination of Geohazard maps using advanced Geospatial Technology</p>
+            <p class="M20 white text-[0.8rem] md:text-[1.4rem] merri leading-[2rem] text-center" style="margin-bottom: 16px;">Promoting a ustainable environment through the           development, generating applications, and <br/>
+            dissemination of Geohazard maps using advanced Geospatial Technology
+            </p>
             <div class="flex gap-4 flex-col md:flex-row">
-            <button class="px-10 py-4 text-lg bg-brandgreen">View Water Level</button>
-          <router-link to="/dashboard">
-            <button class="px-10 py-4 text-lg border-[#EAF7F3] border bg-none">View Dashboard</button>
-          </router-link>
+            <router-link class="" :to="{ name: 'floodEvent'}">
+              <button class=" text-lg bg-brandgreen transition rounded-[0.5rem] px-10 py-4 w-full">
+                View Flood Maps
+              </button>
+            </router-link>
+            <router-link to="/dashboard">
+              <button class="px-10 py-4 text-lg border-[#EAF7F3] border bg-none transition rounded-[0.5rem] w-full">View Past Flood Events</button>
+            </router-link>
 
       
-            </div>
           </div>
-         
-        </div>
-    
+    </div>   
+  </div> 
 </template>
 
 <style scoped>
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../assets/icons/bg1.png');
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
   height: 100vh;
   background-position: center;

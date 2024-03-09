@@ -62,7 +62,15 @@ const NavData = [
             {
                 id: 1,
                 to: "/completed-projects",
+
+                desc: "Cartographic Map",
+            },
+            {
+                id: 1,
+                to: "/floodEvent",
+                desc: "Webmap & StoryMap",
                 desc: "Completed",
+
             },
             // {
             //     id: 2,
@@ -86,14 +94,9 @@ const NavData = [
         name: "Data",
         links: [
             {
-                id: 1,
-                to: "/",
-                desc: "Portal",
-            },
-            {
                 id: 2,
-                to: "/",
-                desc: "Dashboard",
+                to: "/dashboard",
+                desc: "Past Flood Events",
             },
            
            
@@ -129,30 +132,37 @@ const NavData = [
 
     //     ] 
     // },
-    // {
-    //     id: 6,
-    //     name: "Knowledge",
-    //     links: [
-    //         {
-    //             id: 1,
-    //             to: "/insights",
-    //             desc: "Insights",
-    //         },
-    //         {
-    //             id: 2,
-    //             to: "/events",
-    //             desc: "Events",
-    //         },
-    //         {
-    //             id: 3,
-    //             to: "/",
-    //             desc: "Research Papers",
-    //         },
-    //         {
-    //             id: 4,
-    //             to: "/",
-    //             desc: "Regions: NG, GH",
-    //         },
+    {
+        id: 6,
+        name: "Knowledge",
+        links: [
+            {
+                id: 1,
+                to: "/insights",
+                desc: "News and Media",
+            },
+            {
+                id: 2,
+                to: "/events",
+                desc: "Events",
+            },
+            {
+                id: 3,
+                to: "/research",
+                desc: "Research Papers",
+            },
+            {
+                id: 3,
+                to: "/awards",
+                desc: "Awards & Recognitions",
+            },
+            {
+                id: 3,
+                to: "/reports",
+                desc: "Annual Reports",
+            },
+            
+
            
            
 

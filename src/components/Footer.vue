@@ -31,7 +31,7 @@ console.log(emailRef.value);
                     <img src='../assets/icons/GRMI_logo.png' alt="Responsive image" width="183">
                 </router-link>
 
-                <div class="flex gap-4 mt-4 ml-2">
+                <div class="flex gap-4 mt-4 mb-6 ml-2">
                 <div>
                     <a href="https://www.linkedin.com/company/geohazards-risk-mapping-initiative/">
                         <img src='../assets/icons/Linkedin.png' alt="GRMI LINKEDIN">
@@ -42,11 +42,16 @@ console.log(emailRef.value);
                         <img src='../assets/icons/Twitter.png' alt="GRMI TWITTER">
                     </a>
                 </div>
+                <div>
+                    <a href="https://www.youtube.com/@geohazardsriskmappinginiti3596">
+                        <img src='../assets/icons/youtube.png' alt="GRMI YOUTUBE">
+                    </a>
+                </div>
             </div>
-            </div>
+        </div>
            
 
-            <div class="flex flex-col merri items-start justify-start" >
+            <div class="flex flex-col merri items-start justify-start mb-6" >
                 <div class="M20 white cabin" style="font-weight: 700;margin-bottom: 24px;">QUICKLINKS</div>
 
                 <router-link class="M16 white links" @click="scrollToTop" to="/about" style="margin-bottom: 12px; font-weight: 300;">
@@ -58,37 +63,37 @@ console.log(emailRef.value);
                         Team
                     </span>
                 </router-link> -->
-
-                <!-- <router-link class="M16 white links text-nowrap" @click="scrollToTop" to="/news-and-media"
+                
+                  <router-link class="M16 white links" @click="scrollToTop" to="/insights"
                     style="margin-bottom: 12px;">
                     <span>
-                        News and Media
+                       News and Media
                     </span>
-                </router-link> -->
+                </router-link>
+
 
                 <router-link class="M16 white links" @click="scrollToTop" to="/completed-projects"
                     style="margin-bottom: 12px;">
                     <span>
-                        Projects
+                       Cartographic Maps
                     </span>
                 </router-link>
 
-                <router-link class="M16 white links" @click="scrollToTop" to="/" style="margin-bottom: 12px;">
-                    <span>
-                        Portal
-                    </span>
-                </router-link>
+                
 
-                <router-link class="M16 white links" @click="scrollToTop" to="/">
+                <router-link class="M16 white links" @click="scrollToTop" to="/events">
                     <span style="font-weight: 300;">
                         Events
                     </span>
                 </router-link>
             </div>
 
-            <div class="flex flex-col justify-start items-start" >
+            <div class="flex flex-col justify-start items-start mb-6" >
                 <div class="M20 white cabin" style="font-weight: 700;margin-bottom: 24px">CONTACT</div>
-                <span class="M16 white merri">mails@georiskmap.org</span>
+                <a href="mailto: mails@georiskmap.org" class="flex items-center gap-4 cursor-pointer">
+                    <span class="material-icons">mail</span>
+                    <span class="M16 white merri">mails@georiskmap.org</span>
+                </a>
             </div>
 
             <section class="newsletter">

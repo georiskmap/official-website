@@ -7,7 +7,7 @@ import Carousel from './carousel/Carousel.vue';
         <div class="" style="padding:78px 0;">
             <div class="hero-text flex justify-center items-center w-full ">
                 <div class="uppercase font-semibold cabin text-center text-[1.5rem] md:text-[2.8rem] text-tertiary mb-4">
-                    APPS AND DATA
+                   FLOOD MAPS
                 </div>
             </div>
 

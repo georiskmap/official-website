@@ -4,96 +4,82 @@ import Footer from '../components/Footer.vue'
 // import Card from '../components/Cards/Card.vue'
 import "../assets/styles/App.scss"
 
+function wordsLen(str) { 
+    const array = str.trim().split(/\s+/); 
+    return array.length; 
+}
+
+function truncate(str, no_words) {
+    wordsLen(str)
+    let lengtofWord = wordsLen(str)
+    if (lengtofWord > no_words){
+        return str.split(" ").splice(0,no_words).join(" ") + `...`;
+    } else {
+        return str
+    }
+}
+
+const events = [
+    {
+        link: 'https://www.youtube.com/embed/HQ6flMqteBU'+ '?iv_load_policy=3&playsinline=1&rel=0',
+        title: truncate(`Taiwo Ogunwunmi Discusses Impact, Recovery, and Mitigation of Flooding in Nigeria on Radio Now`,20),
+        src: 'https://www.youtube.com/watch?v=CkJej36o1vU',
+        id: 1
+    },
+    {
+        link: 'https://www.youtube.com/embed/wSnlIembLZk'+ '?iv_load_policy=3&playsinline=1&rel=0',
+        title: truncate(`Flood susceptibility mapping of internally displaced persons camps in Maiduguri, Borno state Nigeria. Presented during the Water@Leeds seminar: Global Flood Risk Assessment, December 8th, 2022`,20),
+        src: 'https://www.youtube.com/watch?v=wSnlIembLZk',
+        id: 2
+    },
+    {
+        link: 'https://www.youtube.com/embed/CkJej36o1vU'+ '?iv_load_policy=3&playsinline=1&rel=0',
+        title: truncate(`GRMI GIS DAY 2021`,20),
+        src: 'https://www.youtube.com/watch?v=CkJej36o1vU',
+        id: 3
+    },
+    {
+        link: 'https://www.youtube.com/embed/iUIT_wdx3Qs'+ '?iv_load_policy=3&playsinline=1&rel=0',
+        title: truncate(`Taiwo Ogunwumi Talks to TVC on the need for Effective Flood Emergency Response in Nigeria`,20),
+        src: 'https://www.youtube.com/watch?v=iUIT_wdx3Qs',
+        id: 4
+    },
+    {
+        link: 'https://www.youtube.com/embed/LkVNv_K0WJs?si=33afJmMXg4XrfeV5' + '?iv_load_policy=3&playsinline=1&rel=0',
+        title: truncate(`Radio 95.3FM speak with Taiwo Ogunwumi on Floods in Nigeria.`,20),
+        src: 'https://youtu.be/LkVNv_K0WJs?si=TQblXm5rC_7DTjW5',
+        id: 5
+    },
+    
+    
+]
+
 
 </script>
 
 <template>
     <Navbar />
-    <div class="py-8 px-8 lg:py-20 lg:px-20" style="background-color: #EAF7F3;min-height: 100vh;">
+    <div class="py-8 px-8 lg:py-20 lg:px-20 mob:px-4" style="background-color: #EAF7F3;min-height: 100vh;">
         <div>
             <div class="row text-center mb-5">
-                <div class="text-[3.08rem] font-extrabold cabin ">
+                <div class="text-[3.08rem] font-extrabold cabin uppercase">
                    Events
                 </div>
             </div>
 
             <div class="">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="col-lg-6 col-md-12 col-sm-6 mb-5">
-                        <!-- <div class="our-team"> -->
-                        <div class="pic hover:scale-105  duration-500">
-                            <img src='https://upcdn.io/12a1yd9/image/mapanthon.png' class="img-fluid h-[26rem] w-[26rem]" alt="Responsive image">
+                <div class="grid grid-cols-2 gap-6 midDesk:grid-cols-1">
+                    <article v-for="event in events" :key="event.id" id="card" class=" transition grid grid-rows-row h-full gap-4 p-4 rounded-[0.5rem] cursor-pointer">
+                        <div class="pic hover:scale-105 transition mob:basis-6/12">
+                            <iframe class="w-full  h-[15rem]  rounded-[0.5rem]" :src="event.link" title="{{ event.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
-                        <div class="C31 mt-3 max-w-[700px] uppercase text-[#134A39] text-[1rem] lg:text-[1.2rem] font-bold">
-                            Volunteers from across the world come together to digitally map for Flood Risk Resilience in
-                            Nigeria
-                            in a Mapathon Event
+                        <div class="flex flex-col justify-between gap-4">
+                            <div class="C31 mt-30 uppercase text-[#134A39] text-[1rem] lg:text-[0.9rem] font-bold w-full mob:text-[0.7rem]">
+                               {{ event.title }}
+                            </div>
+                            <a :href="event.src" class="bg-brandgreen text-white px-4 py-4 rounded-md font-bold hover:bg-primary500  transition w-[40%] text-center mx-auto cursor-pointer text-[0.7rem]" target="_blank">Watch on Youtube</a>
                         </div>
-                        <button class="bg-brandgreen text-white px-4 py-4 rounded-md font-bold">
-                            View Publication
-                        </button>
-                        <!-- </div> -->
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-6">
-                        <!-- <div class="our-team"> -->
-                        <div class="pic hover:scale-105 duration-500">
-                            <img  src='https://upcdn.io/12a1yd9/image/gis-day.png' class="img-fluid h-[26rem] w-[26rem]" alt="Responsive image">
-                        </div>
-                        <div class="C31 mt-3  uppercase text-[#134A39] max-w-[800px] text-[1rem] lg:text-[1.2rem] font-bold">
-                            In commensuration of the GIS day, we decided to join the International Geospatial Community to celebrate by hosting a virtual event that brings together young scientists, GIS experts, DRR Experts and universities student.
-                        </div>
-                        <a href="https://storymaps.arcgis.com/stories/a34fab4b205048e6af22ec8df1f83e8e" target="_blank" >
-
-                            <button  class="bg-brandgreen text-white px-4 py-4 rounded-md font-bold">
-                                
-                                Go to Story Map
-                            </button>
-                        </a>
-                        <!-- </div> -->
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-6">
-                        <!-- <div class="our-team"> -->
-                        <div class="pic hover:scale-105 duration-500">
-                            <img src='https://upcdn.io/12a1yd9/image/awareness.JPG' class="img-fluid h-[26rem] w-[26rem]" alt="Responsive image">
-                        </div>
-                        <div class="C31 mt-3  uppercase text-[#134A39]  text-[1rem] lg:text-[1.2rem] font-bold">
-                            Improving flood preparedness for communities in Nigeria through the provision of flood early warning maps
-                        </div>
-                        <a href="https://globalplatform.undrr.org/conference-event/improving-flood-preparedness-communities-nigeria-through-provision-flood-early" target="_blank">
-                            <button class="bg-brandgreen text-white px-4 py-4 rounded-md font-bold">
-                            View Publication
-                        </button>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-6">
-                        <!-- <div class="our-team"> -->
-                        <div class="pic hover:scale-105 duration-500">
-                            <img src='https://upcdn.io/12a1yd9/image/pub-2.jpg' class="img-fluid h-[26rem] w-[26rem]" alt="Responsive image">
-                        </div>
-                        <div class="C31 mt-3  uppercase text-[#134A39]  text-[1rem] lg:text-[1.2rem] font-bold">
-                            Humanitarian mapping exercise for improvement in HIV/AIDS & Gender-Based Violence (GBV) Projects in Nigeria
-                        </div>
-                        <a href="https://precisegis.com.ng/humanitarian-mapping-exercise-for-improvement-in-hiv-aids-gender-based-violence-gbv-projects-in-nigeria" target="_blank">
-                            <button class="bg-brandgreen text-white px-4 py-4 rounded-md font-bold">
-                            View Publication
-                        </button>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-6">
-                        <!-- <div class="our-team"> -->
-                        <div class="pic hover:scale-105 duration-500">
-                            <img src='https://upcdn.io/12a1yd9/raw/flood-risk.JPG' class="img-fluid h-[26rem] w-[26rem]" alt="Responsive image">
-                        </div>
-                        <div class="C31 mt-3  uppercase text-[#134A39]  text-[1rem] lg:text-[1.2rem] font-bold">
-                            Mapping Flood Risk for Nigeria’s Internally Displaced People
-                        </div>
-                        <a href="https://precisegis.com.ng/humanitarian-mapping-exercise-for-improvement-in-hiv-aids-gender-based-violence-gbv-projects-in-nigeria" target="_blank">
-                            <button class="bg-brandgreen text-white px-4 py-4 rounded-md font-bold">
-                            View Publication
-                        </button>
-                        </a>
-                    </div>
-                    
+                    </article>
                 </div>
             </div>
         </div>
@@ -103,12 +89,10 @@ import "../assets/styles/App.scss"
 
 
 <style scoped>
-.custom-card {
-    margin-bottom: 24px;
+
+
+#card {
+    box-shadow: 10rem 10rem 10rem var(brandgray);
 }
 
-/* .our-team .pic img {
-    width: 100%;
-    height: auto;
-} */
 </style>

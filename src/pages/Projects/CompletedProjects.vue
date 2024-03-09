@@ -39,25 +39,31 @@ function openModal() {
   isOpen.value = true
 }
 
+const getImgUrl = (path) => {
+      return new URL(`../../../public/${path}`, import.meta.url).href;
+  };
+
 </script>
 
 <template>
     <Navbar />
-    <div class="py-12 px-8 md:px-20 md" style="background-color: #EAF7F3;min-height: 100vh;">
+    <div class="py-12 px-20 tab:px-4" style="background-color: #EAF7F3;min-height: 100vh;">
         <div>
             <div class="row text-center mb-5">
-                <div class="C49 cabin text-[3rem] font-bold text-center">
-                    COMPLETED PROJECTS
+                <div class="C49 cabin text-[3rem] font-bold text-center tab:text-[1.5rem]">
+                    CARTOGRAPHIC MAP
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" >
+            <div class="grid grid-cols-1 md:grid-cols-temp2  gap-[1.2rem]" >
                 <div v-for="slide in AppsData" :key="slide.id">
       <div  class="connection-card">
-        <div class="card m-3 text-white h-[450px] w-[300px] md:w-[350px] rounded-lg flex items-end" :style="{'background-image':`url(${slide.placeholder})`,
-        'background-size': 'cover', 'background-repeat': 'no-repeat','background-position': 'center'}">
+        <div class="card text-white h-[300px] w-full rounded-lg flex items-end relative">
+          <div class="absolute top-0 left-0 w-full h-full z-[2] bg-[rgba(0,0,0,0.3)]">
+          </div>
+          <img :src="getImgUrl(slide.placeholder)" alt="" class="absolute top-0 left-0 w-full h-full z-[1] object-fill">
 
-          <div class="flex flex-col p-3 w-full">
+          <div class="flex flex-col p-3 w-full z-[2]">
             <div class="flex flex-col merri" style="padding: 0;">
               <div class="media-body flex flex-col" style="align-items: flex-start;">
                 <div class="M20 text-white font-normal text-[1.4rem] d-block" style="margin-bottom: 4px;">
@@ -69,7 +75,7 @@ function openModal() {
               </div>
 
               <button @click="showIframe(slide)"
-                class="w-full hover:bg-brandgreen hover:text-white bg-[#FFF] font-semibold text-[1.1rem] rounded-md text-tertiary py-4 px-5 min-w-[100px]">
+                class="w-full hover:bg-brandgreen hover:text-white bg-[#FFF] font-semibold text-[1.1rem] rounded-md text-tertiary py-4 px-5 min-w-[100px] transition">
                 View Maps
               </button>
 
@@ -91,7 +97,5 @@ function openModal() {
 
 
 <style scoped>
-.custom-card {
-    margin-bottom: 24px;
-}
+
 </style>
