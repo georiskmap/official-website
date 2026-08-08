@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-[#FFFFFF] px-[5rem] midDesk:px-[3rem] mob:px-[1.5rem] py-[6.38rem]">
+  <section class="w-full bg-[#FFFFFF] px-[5rem] midDesk:px-[1.5rem] py-[6.38rem]">
     <h1
       aria-label="katcha articles"
       class="text-[#0E1C16] font-cabin text-[2.25rem] leading-[2.7rem] mb-[3.5rem]"

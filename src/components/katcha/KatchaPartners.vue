@@ -1,6 +1,6 @@
 <template>
   <section
-    class="w-full bg-white pt-[3rem] !pb-[8rem] px-[5rem] midDesk:px-[3rem] mob:px-[1.5rem]"
+    class="w-full bg-white pt-[3rem] !pb-[8rem] px-[5rem] midDesk:px-[1.5rem]"
   >
     <h1
       class="text-[#0E1C16] font-cabin font-[500] text-[2.25rem] leading-[2.7rem] mb-[2rem] uppercase"

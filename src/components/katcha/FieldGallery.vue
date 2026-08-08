@@ -9,7 +9,7 @@
       <!-- Fixed six columns rather than the auto-fit customGrid, so "two rows" is exactly
            two rows on desktop instead of varying with the viewport width. -->
       <div
-        class="w-[98%] mx-auto grid grid-cols-6 tab2:!grid-cols-4 midDesk:!grid-cols-3 mob:!grid-cols-2 mob:!w-[95%]"
+        class="w-[98%] mx-auto grid grid-cols-6 tab2:!grid-cols-4 midDesk:!grid-cols-2 mob:!w-[95%]"
       >
         <article
           v-for="photo in WorkshopGallery"

@@ -48,4 +48,26 @@ const text = `In Katcha Ward, on the floodplain of the River Niger, flooding has
 .scatter-item {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* The scatter offsets are absolute rem values up to 38rem (608px) from the left edge, so
+   on a phone most slots land outside the container and are clipped by overflow:hidden.
+   Below 700px the layout drops out of absolute positioning and becomes a plain grid, which
+   makes the inline top/left/right styles inert. !important is needed because the utility
+   classes and this scoped block have equal specificity and their emitted order is not
+   guaranteed. */
+@media (max-width: 700px) {
+  .image-layout {
+    height: auto !important;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    overflow: visible;
+  }
+
+  .scatter-item {
+    position: static !important;
+    width: 100% !important;
+    height: 7rem !important;
+  }
+}
 </style>
