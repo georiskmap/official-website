@@ -24,12 +24,15 @@
         "
         :data-placeholder="item.pending ? 'media-logo' : undefined"
       >
+        <!-- Artwork if the file is present; the wordmark below takes over if it 404s, so a
+             missing logo degrades instead of leaving a broken image. -->
         <img
-          v-if="!item.pending && item.logo"
+          v-if="!item.pending && item.logo && !failed[item.id]"
           :src="item.logo"
           :alt="item.name"
           loading="lazy"
           class="h-full w-full object-contain py-[0.75rem] grayscale hover:grayscale-0 transitionEffect"
+          @error="failed[item.id] = true"
         />
 
         <p
@@ -46,7 +49,11 @@
 </template>
 
 <script setup>
+import { reactive } from 'vue'
 import { MediaAppearances } from '@/utils/KatchaData'
+
+// Tiles whose logo file failed to load, keyed by id.
+const failed = reactive({})
 </script>
 
 <style scoped></style>
