@@ -131,11 +131,14 @@ Route `/katcha` → `src/pages/katcha/Homepage.vue`
   the Katcha mission to link to; alignment with the Sendai Framework is already stated in
   `ClosingCall.vue`. A logo in a press row would have implied coverage that did not happen, and
   the UN emblem carries usage restrictions that newspaper mastheads do not.
-- **Partners, tile 1** — **National Cereals Research Institute, Badeggi**. No logo artwork yet, so it renders as a named lockup.
+- **Partners** — **NCRI Badeggi**, in the same typographic credit style as Media Appearances:
+  short display name in Cabin with the full name and location set beneath in Merriweather.
+  Entries carry an optional `href`; without one they render as plain type rather than a link.
+  No placeholder slots.
 
-Both `MediaAppearances` and `Partners` entries follow the rule: `logo: null` → name set in
-type; supply a path under `public/media/katcha/press/` or `public/media/katcha/partners/`
-and the tile switches to the image with no other change.
+Both sections dropped logo artwork and placeholder tiles by decision. Restoring image
+treatment means reinstating the `logo` field and an `<img>` with an `@error` fallback in
+`KatchaMedia.vue` / `KatchaPartners.vue`.
 
 ### 3.1 Placeholder treatment
 

@@ -249,20 +249,16 @@ export const MediaAppearances = [
   },
 ]
 
-// Partners. Same rule as above: `logo` null → named text lockup. Drop the artwork at
-// public/media/katcha/partners/ncri-badeggi.png and set `logo` to that path to upgrade it.
+// Partners, set in the same typographic credit style as MediaAppearances above: a short
+// display name in the page's display face, with the full name and location beneath.
+// `href` is optional — an entry without one renders as plain type rather than a link.
 export const Partners = [
   {
     id: 1,
-    name: 'National Cereals Research Institute',
-    sub: 'Badeggi, Niger State',
-    logo: null,
+    name: 'NCRI Badeggi',
+    sub: 'National Cereals Research Institute · Niger State',
     href: null,
-    pending: false,
   },
-  { id: 2, label: 'Partner', pending: true },
-  { id: 3, label: 'Partner', pending: true },
-  { id: 4, label: 'Partner', pending: true },
 ]
 
 // Same absolute offsets as the Children & Disaster clipping collage

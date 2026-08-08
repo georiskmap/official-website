@@ -1,54 +1,51 @@
 <template>
-  <section class="bg-white pt-[3rem] !pb-[8rem]">
+  <section
+    class="w-full bg-white pt-[3rem] !pb-[8rem] px-[5rem] midDesk:px-[3rem] mob:px-[1.5rem]"
+  >
     <h1
-      class="text-[#0E1C16] font-cabin font-[500] text-[2.25rem] leading-[2.7rem] ml-[5rem] midDesk:ml-[3rem] mb-[2rem] uppercase"
+      class="text-[#0E1C16] font-cabin font-[500] text-[2.25rem] leading-[2.7rem] mb-[2rem] uppercase"
     >
       Partners
     </h1>
 
-    <div
-      class="w-full mx-auto flex gap-8 overflow-x-auto items-center no-scrollbar px-[5rem] midDesk:px-[3rem]"
-    >
-      <component
+    <!-- Same typographic credit treatment as KatchaMedia.vue. -->
+    <ul class="flex flex-wrap items-start border-t border-[#DCE4DF] pt-[2.5rem]">
+      <li
         v-for="partner in Partners"
         :key="partner.id"
-        :is="partner.href ? 'a' : 'div'"
-        :href="partner.href || undefined"
-        :target="partner.href ? '_blank' : undefined"
-        :rel="partner.href ? 'noopener noreferrer' : undefined"
-        class="flex justify-center items-center shrink-0 basis-[22%] tab2:basis-[35%] mob:basis-[70%] h-[6rem] rounded-[4px] px-[1rem]"
-        :class="
-          partner.pending
-            ? 'bg-[#F3F5F4] border border-dashed border-[#C4D2CB]'
-            : 'bg-[#F3F5F4] border border-[#DCE4DF]'
-        "
-        :data-placeholder="partner.pending ? 'partner-logo' : undefined"
+        class="border-l border-[#DCE4DF] pl-[3rem] pr-[3rem] first:border-l-0 first:pl-0 mob:!border-l-0 mob:!pl-0 mob:!pr-0 mob:w-full mob:mb-[1.5rem]"
       >
-        <!-- Real partner, artwork supplied -->
-        <img
-          v-if="!partner.pending && partner.logo"
-          :src="partner.logo"
-          :alt="partner.name"
-          loading="lazy"
-          class="h-full w-full object-contain py-[0.75rem] grayscale hover:grayscale-0 transitionEffect"
-        />
-
-        <!-- Real partner, artwork pending: name set in type rather than an empty tile -->
-        <div v-else-if="!partner.pending" class="text-center">
-          <p
-            class="font-cabin font-[600] text-[0.95rem] leading-[1.2rem] text-[#0E1C16] uppercase tracking-wide"
+        <component
+          :is="partner.href ? 'a' : 'div'"
+          :href="partner.href || undefined"
+          :target="partner.href ? '_blank' : undefined"
+          :rel="partner.href ? 'noopener noreferrer' : undefined"
+          class="group block"
+        >
+          <span class="inline-flex items-baseline gap-[0.6rem]">
+            <span
+              class="font-cabin font-[600] text-[2rem] leading-[2.4rem] midDesk:text-[1.5rem] midDesk:leading-[1.9rem] uppercase tracking-[0.06em] text-[#0E1C16] transitionAll"
+              :class="partner.href ? 'group-hover:text-[#4E695D]' : ''"
+            >
+              {{ partner.name }}
+            </span>
+            <span
+              v-if="partner.href"
+              aria-hidden="true"
+              class="font-cabin text-[1.1rem] text-[#8FA79B] group-hover:text-[#4E695D] group-hover:translate-x-[2px] inline-block transitionAll"
+            >
+              ↗
+            </span>
+          </span>
+          <span
+            v-if="partner.sub"
+            class="block font-merri text-[0.875rem] leading-[1.3rem] text-[#4E695D] mt-[0.5rem]"
           >
-            {{ partner.name }}
-          </p>
-          <p v-if="partner.sub" class="font-merri text-[0.75rem] text-[#4E695D] mt-[0.25rem]">
             {{ partner.sub }}
-          </p>
-        </div>
-
-        <!-- Slot still to be filled -->
-        <p v-else class="font-merri text-[0.875rem] text-[#8FA79B]">{{ partner.label }}</p>
-      </component>
-    </div>
+          </span>
+        </component>
+      </li>
+    </ul>
   </section>
 </template>
 
