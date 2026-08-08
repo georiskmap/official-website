@@ -14,6 +14,10 @@ dist-ssr
 coverage
 *.local
 
+# Raw field media. Originals stay out of the repo; the optimised web copies
+# live in public/media/. See katcha.md section 4.
+Katcha photos/
+
 /cypress/videos/
 /cypress/screenshots/
 

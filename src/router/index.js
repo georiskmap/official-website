@@ -84,6 +84,11 @@ const router = createRouter({
       name: "Children&Disaster",
       component: () => import('../pages/schools/Homepage.vue'),
     },
+    {
+      path: "/katcha",
+      name: "Katcha",
+      component: () => import('../pages/katcha/Homepage.vue'),
+    },
   ]
 })
 
