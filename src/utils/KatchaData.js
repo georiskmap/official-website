@@ -230,36 +230,23 @@ export const Articles = [
   { id: 4, label: 'Article', note: 'Publication pending', pending: true },
 ]
 
-// Press appearances. `logo` points at a file under public/media/katcha/press/. The tile
-// renders the image when the file is there and falls back to the publication name set in
-// type when it is missing or fails to load, so a missing logo degrades rather than breaks.
+// Press appearances, rendered as a typographic credit row rather than logo tiles — the
+// outlets' mastheads could not be sourced (both serve a Cloudflare bot challenge to any
+// automated request), and setting the names in the page's own display face reads as a
+// deliberate "as seen in" credit instead of a row of empty logo slots.
 //
-// TO ADD THE ARTWORK: drop these two files into public/media/katcha/press/ and they
-// appear automatically — no code change needed.
-//   the-nation.png   thecable.png
-// Transparent PNG or SVG, roughly 400x120, is what the existing outlet logos in public/
-// (tribune.png, vanguard.png, businessday.png, telegraph.png) look like.
-//
-// The artwork could not be fetched: both thenationonlineng.net and thecable.ng serve a
-// Cloudflare bot challenge (403) to any automated request, including for static assets.
-// Source these from GRMI's press kit or from the outlets directly.
+// Adding coverage is one entry here; there are no placeholder slots to fill.
 export const MediaAppearances = [
   {
     id: 1,
     name: 'The Nation',
-    logo: '/media/katcha/press/the-nation.png',
     href: 'https://thenationonlineng.net/grmi-trains-niger-rice-farmers-distributes-flood-tolerant-seeds/',
-    pending: false,
   },
   {
     id: 2,
     name: 'TheCable',
-    logo: '/media/katcha/press/thecable.png',
     href: 'https://www.thecable.ng/how-satellite-flood-maps-and-a-new-rice-variety-are-helping-katchas-farmers-fight-back-against-floods/',
-    pending: false,
   },
-  { id: 3, label: 'Press logo', pending: true },
-  { id: 4, label: 'Press logo', pending: true },
 ]
 
 // Partners. Same rule as above: `logo` null → named text lockup. Drop the artwork at

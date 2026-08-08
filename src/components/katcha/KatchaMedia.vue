@@ -1,59 +1,44 @@
 <template>
-  <section class="bg-white pt-[6rem]">
+  <section class="w-full bg-white pt-[6rem] px-[5rem] midDesk:px-[3rem] mob:px-[1.5rem]">
     <h1
-      class="text-[#0E1C16] font-cabin font-[500] text-[2.25rem] leading-[2.7rem] ml-[5rem] midDesk:ml-[3rem] mb-[2rem] uppercase"
+      class="text-[#0E1C16] font-cabin font-[500] text-[2.25rem] leading-[2.7rem] mb-[2rem] uppercase"
     >
       Media Appearances
     </h1>
 
-    <div
-      class="w-full mx-auto flex gap-8 overflow-x-auto items-center no-scrollbar px-[5rem] midDesk:px-[3rem]"
-    >
-      <component
+    <!-- Typographic credit row: the outlet names set in the page's display face, rather
+         than logo tiles. See the note in utils/KatchaData.js. -->
+    <ul class="flex flex-wrap items-center border-t border-[#DCE4DF] pt-[2.5rem] pb-[1rem]">
+      <li
         v-for="item in MediaAppearances"
         :key="item.id"
-        :is="item.href ? 'a' : 'div'"
-        :href="item.href || undefined"
-        :target="item.href ? '_blank' : undefined"
-        :rel="item.href ? 'noopener noreferrer' : undefined"
-        class="flex justify-center items-center shrink-0 basis-[22%] tab2:basis-[35%] mob:basis-[70%] h-[6rem] rounded-[4px] px-[1rem]"
-        :class="
-          item.pending
-            ? 'bg-[#F3F5F4] border border-dashed border-[#C4D2CB]'
-            : 'bg-[#F3F5F4] border border-[#DCE4DF] hover:border-[#4E695D] transitionAll'
-        "
-        :data-placeholder="item.pending ? 'media-logo' : undefined"
+        class="border-l border-[#DCE4DF] pl-[3rem] pr-[3rem] first:border-l-0 first:pl-0 mob:!border-l-0 mob:!pl-0 mob:!pr-0 mob:w-full mob:mb-[1.5rem]"
       >
-        <!-- Artwork if the file is present; the wordmark below takes over if it 404s, so a
-             missing logo degrades instead of leaving a broken image. -->
-        <img
-          v-if="!item.pending && item.logo && !failed[item.id]"
-          :src="item.logo"
-          :alt="item.name"
-          loading="lazy"
-          class="h-full w-full object-contain py-[0.75rem] grayscale hover:grayscale-0 transitionEffect"
-          @error="failed[item.id] = true"
-        />
-
-        <p
-          v-else-if="!item.pending"
-          class="font-cabin font-[600] text-[1.1rem] text-[#0E1C16] uppercase tracking-wide text-center"
+        <a
+          :href="item.href"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group inline-flex items-baseline gap-[0.6rem]"
         >
-          {{ item.name }}
-        </p>
-
-        <p v-else class="font-merri text-[0.875rem] text-[#8FA79B]">{{ item.label }}</p>
-      </component>
-    </div>
+          <span
+            class="font-cabin font-[600] text-[2rem] leading-[2.4rem] midDesk:text-[1.5rem] midDesk:leading-[1.9rem] uppercase tracking-[0.06em] text-[#0E1C16] group-hover:text-[#4E695D] transitionAll"
+          >
+            {{ item.name }}
+          </span>
+          <span
+            aria-hidden="true"
+            class="font-cabin text-[1.1rem] text-[#8FA79B] group-hover:text-[#4E695D] group-hover:translate-x-[2px] inline-block transitionAll"
+          >
+            ↗
+          </span>
+        </a>
+      </li>
+    </ul>
   </section>
 </template>
 
 <script setup>
-import { reactive } from 'vue'
 import { MediaAppearances } from '@/utils/KatchaData'
-
-// Tiles whose logo file failed to load, keyed by id.
-const failed = reactive({})
 </script>
 
 <style scoped></style>

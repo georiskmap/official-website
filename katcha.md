@@ -119,14 +119,14 @@ Route `/katcha` → `src/pages/katcha/Homepage.vue`
 - **Articles, card 1** — *"GRMI trains Niger rice farmers, distributes flood-tolerant seeds"*, The Nation, [thenationonlineng.net](https://thenationonlineng.net/grmi-trains-niger-rice-farmers-distributes-flood-tolerant-seeds/). Card image: GRMI's own handover photo (`workshop-11`).
 - **Articles, card 2** — *"How satellite flood maps and a new rice variety are helping Katcha's farmers fight back against floods"*, TheCable, [thecable.ng](https://www.thecable.ng/how-satellite-flood-maps-and-a-new-rice-variety-are-helping-katchas-farmers-fight-back-against-floods/). Card image: the standing-rice-field photo (`floodplain-03`).
 - ⚠️ **Both headlines are reconstructed from their URL slugs.** Both outlets sit behind bot challenges, so the exact headlines, dates, bylines and lead images could not be read, and that was not worked around. Confirm the titles.
-- **Media Appearances, tiles 1–2** — The Nation and TheCable, each linking its article.
-  ⚠️ **Logo artwork outstanding.** Both tiles point at `public/media/katcha/press/the-nation.png`
-  and `thecable.png`; neither file exists, so each tile falls back to the publication name set
-  in type (an `@error` handler on the `<img>` makes the fallback automatic). The artwork could
-  not be fetched — both outlets serve a Cloudflare bot challenge (403) to every automated
-  request, including for favicons and static assets, and that was not worked around. Source
-  the files from GRMI's press kit or from the outlets, drop them in, and the tiles switch to
-  images with no code change.
+- **Media Appearances** — The Nation and TheCable, as a **typographic credit row**, not logo
+  tiles: names set in Cabin at `2rem`, uppercase, letterspaced `0.06em`, separated by hairline
+  rules, each linking its article with an `↗` affordance. Logo artwork was abandoned by
+  decision after it proved unfetchable — both outlets serve a Cloudflare bot challenge (403)
+  to every automated request, including for favicons and static assets, and that was not
+  worked around. Adding coverage later is one entry in `MediaAppearances`; there are no
+  placeholder slots. If mastheads are sourced from GRMI's press kit later, this section would
+  need reverting to the tile treatment.
 - **UNDRR tile — removed by decision.** UNDRR is not a media outlet and there is no coverage of
   the Katcha mission to link to; alignment with the Sendai Framework is already stated in
   `ClosingCall.vue`. A logo in a press row would have implied coverage that did not happen, and
