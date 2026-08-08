@@ -116,8 +116,10 @@ Route `/katcha` → `src/pages/katcha/Homepage.vue`
 
 ### 3.0 Real content now live
 
-- **Articles, card 1** — *"GRMI trains Niger rice farmers, distributes flood-tolerant seeds"*, The Nation, [thenationonlineng.net](https://thenationonlineng.net/grmi-trains-niger-rice-farmers-distributes-flood-tolerant-seeds/). ⚠️ The headline is **reconstructed from the URL slug**: the site sits behind a Cloudflare bot challenge, so the exact headline, date, byline and lead image could not be read and were not worked around. Confirm the title. The card uses GRMI's own handover photo (`workshop-11`) rather than the paper's lead image.
-- **Media Appearances, tile 1** — The Nation, linking the same article. No logo artwork, so it renders as a wordmark.
+- **Articles, card 1** — *"GRMI trains Niger rice farmers, distributes flood-tolerant seeds"*, The Nation, [thenationonlineng.net](https://thenationonlineng.net/grmi-trains-niger-rice-farmers-distributes-flood-tolerant-seeds/). Card image: GRMI's own handover photo (`workshop-11`).
+- **Articles, card 2** — *"How satellite flood maps and a new rice variety are helping Katcha's farmers fight back against floods"*, TheCable, [thecable.ng](https://www.thecable.ng/how-satellite-flood-maps-and-a-new-rice-variety-are-helping-katchas-farmers-fight-back-against-floods/). Card image: the standing-rice-field photo (`floodplain-03`).
+- ⚠️ **Both headlines are reconstructed from their URL slugs.** Both outlets sit behind bot challenges, so the exact headlines, dates, bylines and lead images could not be read, and that was not worked around. Confirm the titles.
+- **Media Appearances, tiles 1–2** — The Nation and TheCable, each linking its article. No logo artwork, so both render as wordmarks.
 - **Partners, tile 1** — **National Cereals Research Institute, Badeggi**. No logo artwork yet, so it renders as a named lockup.
 
 Both `MediaAppearances` and `Partners` entries follow the rule: `logo: null` → name set in

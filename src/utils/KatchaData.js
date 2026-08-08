@@ -200,10 +200,11 @@ export const FloodplainGallery = [
 // Published pieces first, then placeholders — see katcha.md section 3.1. To add a real
 // article, replace a `pending: true` entry with the shape used by article id 1.
 //
-// NOTE ON ARTICLE 1: the headline below is reconstructed from the URL slug. The Nation's
-// site is behind a Cloudflare bot challenge, so the exact headline, date, byline and lead
-// image could not be read. Confirm the title and swap `image` for the paper's own lead
-// image if GRMI has permission to use it.
+// NOTE ON ARTICLES 1 AND 2: both headlines are reconstructed from their URL slugs. The
+// Nation and TheCable both sit behind bot challenges, so the exact headlines, dates,
+// bylines and lead images could not be read. Confirm the titles, and swap `image` for each
+// outlet's own lead image if GRMI has permission to use it. Card images are currently
+// GRMI's own field photographs.
 export const Articles = [
   {
     id: 1,
@@ -215,7 +216,16 @@ export const Articles = [
       'A labelled 10 kg pack of FARO 67 seed being handed to a farmer representative at the Katcha Ward handover',
     pending: false,
   },
-  { id: 2, label: 'Article', note: 'Publication pending', pending: true },
+  {
+    id: 2,
+    publication: 'TheCable',
+    text: 'How satellite flood maps and a new rice variety are helping Katcha’s farmers fight back against floods',
+    href: 'https://www.thecable.ng/how-satellite-flood-maps-and-a-new-rice-variety-are-helping-katchas-farmers-fight-back-against-floods/',
+    image: '/media/katcha/photos/thumb/floodplain-03.jpg',
+    imageAlt:
+      'A GRMI team member recording field observations in a standing rice field on the Katcha floodplain',
+    pending: false,
+  },
   { id: 3, label: 'Article', note: 'Publication pending', pending: true },
   { id: 4, label: 'Article', note: 'Publication pending', pending: true },
 ]
@@ -231,7 +241,13 @@ export const MediaAppearances = [
     href: 'https://thenationonlineng.net/grmi-trains-niger-rice-farmers-distributes-flood-tolerant-seeds/',
     pending: false,
   },
-  { id: 2, label: 'Press logo', pending: true },
+  {
+    id: 2,
+    name: 'TheCable',
+    logo: null,
+    href: 'https://www.thecable.ng/how-satellite-flood-maps-and-a-new-rice-variety-are-helping-katchas-farmers-fight-back-against-floods/',
+    pending: false,
+  },
   { id: 3, label: 'Press logo', pending: true },
   { id: 4, label: 'Press logo', pending: true },
 ]
