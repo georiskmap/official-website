@@ -7,7 +7,7 @@
         <span>{{ titleText }}</span><span class="cursor"></span>
       </h1>
       <p
-        class="text-[#E9EBF8] font-merri font-[400] text-[1.9rem] midDesk:text-[1.2rem] leading-[2.3rem] mob:text-[1rem]"
+        class="text-[#E9EBF8] font-merri font-[400] text-[1.9rem] midDesk:text-[1.1rem] leading-[2.3rem]"
       >
         <span>{{ subtitleText }}</span><span class="cursor"></span>
       </p>

@@ -31,6 +31,12 @@ export default {
         'row': 'auto 1fr',
         'row2': '1fr auto'
       },
+      // NOTE: these are emitted in declaration order, and most are max-width. Because
+      // 'mob' (600) is declared before 'midDesk' (800), both match on a phone and the
+      // midDesk rule wins — so `midDesk:text-sm mob:text-xs` silently renders text-sm on
+      // a 375px screen. Do not stack mob: and midDesk: on the same property. The root fix
+      // is to reorder these max-width entries largest to smallest; that changes emitted
+      // CSS order site-wide, so it needs a visual pass over every page first.
       screens: {
         'tab': {'max': '900px'},
         'tab2': {'max': '1200px'},
